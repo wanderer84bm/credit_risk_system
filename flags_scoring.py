@@ -1,0 +1,6 @@
+LOW_R = 8
+MEDIUM_R = 10
+HIGH_R = 12
+LOW_G = -5
+MEDIUM_G = -10
+HIGH_G = -15

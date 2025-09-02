@@ -1,0 +1,20 @@
+{
+  "n_train": 7596,
+  "n_val": 2532,
+  "n_test": 2533,
+  "val_best_threshold": 0.225,
+  "val_balanced_accuracy": 0.6055557518371961,
+  "test_accuracy": 0.5673114883537308,
+  "test_balanced_accuracy": 0.5969834207320303,
+  "test_precision": 0.2971698113207547,
+  "test_recall": 0.6517241379310345,
+  "test_f1": 0.408207343412527,
+  "test_auc_raw": 0.6416538658474142,
+  "test_auc_calibrated": 0.6387374860956618,
+  "test_brier": 0.16973476698141868,
+  "class_distribution_test": {
+    "positives": 580,
+    "negatives": 1953
+  },
+  "classification_report": "              precision    recall  f1-score   support\n\n     good(0)       0.84      0.54      0.66      1953\n      bad(1)       0.30      0.65      0.41       580\n\n    accuracy                           0.57      2533\n   macro avg       0.57      0.60      0.53      2533\nweighted avg       0.72      0.57      0.60      2533\n"
+}
