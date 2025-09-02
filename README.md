@@ -1,4 +1,4 @@
-README
+
 # BNPL Credit Risk — agentic pipeline
 
 **Goal:** build an agentic BNPL risk pipeline and optimize **Balanced Accuracy** (BA) end-to-end on a 1k stratified sample. **Target BA > 0.75.**
@@ -24,14 +24,14 @@ README
 3. **Gate (policy)** — hard policy checks; fail = auto-reject.  
    - **3.5 Flags** — red/green flags (LLM design), but **LLM calls are disabled in eval**.  
 4. **Model (risk)** — HistGradientBoosting trained on **John Hull / Lending Club**; outputs PD and a **0–100 risk** score.  
-5. **Decision** — blend risk + flags and compare to cutoff (binary; no review).  
+5. **Decision** — blend risk + flags and compare to cutoff.  
 6. **Explain** — map reasons to 6 short codes (and plain-English labels). Explanations come from **Agent 3 flags** + **top SHAP factors** from Agent 4.
 
 ---
 
-## Decision policy (what we actually cut on)
+## Decision policy
 
-- **Score space:** risk **0–100** (not PD).
+- **Score space:** risk **0–100**
 - **Blend:**
 ```
 
@@ -79,7 +79,7 @@ Confusion matrix \[rows=true (0,1); cols=pred (0,1)]:
 ## What I tried (didn’t move BA)
 
 - **Import/cache cleanup:** earlier **0.725 BA** was a mirage from mixed imports.  
-- **Changing cutoffs:** adjusted across 20–60; didn’t improve BA (best single run at cutoff **23** hit ~**0.602 BA**, not stable across slices).  
+- **Changing cutoffs:** adjusted across 20–60; didn’t improve BA (best single run at cutoff **23** hit ~**0.602 BA**).  
 - **Gate & flags variants:** tightened/loosened gate.  
 - **Alt model:** swapped classifier → **lower BA** than current HGBM; reverted.  
 - **Weights:** different ML vs flags splits (e.g., **0.7/0.3** and **0.9/0.1** ML weight) — no durable BA lift.
@@ -114,7 +114,7 @@ LLM calls are off by default for testing.
 ## Known issues
 
 * **Old BA 0.72 ≠ real:** stale imports/global state; cleared.
-* **Rounding edges:** if switching to PD later, cut on **raw PD**, not rounded integers.
+* multiple errors during eval (refer `eval_results.csv`)
 * **Model details:** see `agent4.csv` for configuration/notes (HGBM + SHAP).
 
 ---
@@ -131,7 +131,6 @@ agent5.py         # decision policy (cutoff logic)
 agent6.py         # explanation codes/labels
 cutoff.py         # knobs (weights, cutoffs, switches)
 eval.py           # 1k-row eval; prints metrics & writes eval.csv
-.env.example      # LLM config placeholders (not required for this eval)
 ```
 
 ```
