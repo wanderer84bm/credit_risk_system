@@ -35,7 +35,7 @@
 - **Blend:**
 ```
 
-final\_score = 0.8 \* ML\_risk + 0.2 \* flag\_points
+final_score = 0.8 * ML_risk + 0.2 * flag_points
 
 ```
 - **Flags:** max 5 per profile  
