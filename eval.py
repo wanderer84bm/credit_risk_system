@@ -39,7 +39,7 @@ def row_to_profile(row: pd.Series) -> dict:
     """Adapt a flat row into the nested profile expected by your pipeline."""
     r = row.to_dict()
 
-    identity = {"age": _get(r, "age", None)}
+    #identity = {"age": _get(r, "age", None)}
 
     cb = {
         "credit_score": _get(r, "credit_score"),
@@ -88,7 +88,7 @@ def row_to_profile(row: pd.Series) -> dict:
     }
 
     profile = {
-        "identity": identity,
+        #"identity": identity,
         "credit_bureau_data": cb,
         "location": loc,
         "family": fam,
@@ -106,7 +106,7 @@ def decision_to_label(decision: str) -> int:
       - REJECT                           -> 1 (default)
     """
     d = (decision or "").upper()
-    return 0 if d == "APPROVE" else 1
+    return 1 if d == "REJECT" else 0
 
 def tune_tau(y_true, pd_hat, objective="balanced_accuracy", cost_fp=1.0, cost_fn=5.0, grid=501):
     """

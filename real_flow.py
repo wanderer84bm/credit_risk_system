@@ -102,8 +102,8 @@ def run_pipeline(profile: Dict[str, Any],
     
     other_score = float(score_flags_v0({"flags":det_flags}).get("total_score", 0.0))
     # 4) model
-    flat = _flatten_for_model({**p2, "derived_metrics": p2.get("derived_metrics", {})})
-    out4 = agent4_predict_with_shap(flat, model_path, meta_path, top_k=3)
+    #flat = _flatten_for_model({**p2, "derived_metrics": p2.get("derived_metrics", {})})
+    out4 = agent4_predict_with_shap(p2, model_path, meta_path, top_k=3)
     ml_risk = float(out4.get("risk_score") or 0.0)
     ml_flags = extract_model_flags_from_shap(out4, top_k=3) if out4.get("top_factors") else []
     final_score = 0.8 * ml_risk + 0.2 * other_score

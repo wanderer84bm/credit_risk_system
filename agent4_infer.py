@@ -42,16 +42,24 @@ def _cols(meta):
     num = meta.get("numeric_features", []) or []
     cat = meta.get("categorical_features", []) or []
     return list(num) + list(cat), list(num), list(cat)
+def _flatten_for_model(profile):
+    flat = {}
+    for k, v in (profile or {}).items():
+        if k in {"credit_bureau_data","location","family","socioeconomic","application_context","derived_metrics"} and isinstance(v, dict):
+            flat.update(v)
+    return flat
 
 def _align_row(profile: dict, meta: dict) -> pd.DataFrame:
     cols, _, _ = _cols(meta)
     base = {c: np.nan for c in cols}
-    for k, v in (profile or {}).items():
+    flat= _flatten_for_model(profile)
+    for k, v in (flat or {}).items():
         if k in base:
             base[k] = v
     return pd.DataFrame([base], columns=cols)
 
 def _predict_pd(model, df_row: pd.DataFrame) -> float:
+    
     # model can be a Pipeline or CalibratedClassifierCV; both have predict_proba
     return float(model.predict_proba(df_row)[:, 1][0])
 
@@ -224,7 +232,92 @@ if __name__ == "__main__":
         "marital_status": "single",
         "employment_status": "part_time",
     }
-    out = agent4_predict_with_shap(demo, MODEL_PATH, META_PATH, top_k=3)
+    profile = {
+    "credit_bureau_data": {
+        "fico_score": 737.0,
+        "revol_util": 0.362,
+        "revol_bal": 38870.16574585635,
+        "total_open_accounts": 13.0,
+        "oldest_account_age_years": 25.0,
+        "delinq_2yrs": 0,
+        "has_bankruptcy": False,
+        "inquiries_last_12m": 3,
+        "public_records": 0,
+    },
+    "location": {
+        "postal_code": "760xx",
+    },
+    "family": {
+        "marital_status": "married",
+        "household_size": 2,
+        "dependents": 1.0,
+    },
+    "socioeconomic": {
+        "age": 22,
+        "housing_status": "rent",
+        "employment_status": "full_time",
+        "years_at_job": 1.0,
+        "occupation": "Designer",
+        "annual_income": 50000.0,
+        "monthly_income": 4166.666666666667,
+        "total_monthly_debt_payments": 1791.6666666666663,
+    },
+    "application_context": {
+        "purchase_amount": 14071.0,
+        # add term_months here if your PTI expects it (e.g., 24/36/48)
+        "term_months": 3,
+    },
+    "derived_metrics": {
+        "DTI": 0.2962,
+        "PTI": 0.1433333333333333,
+        "HCR": 0.25564115790271,
+        "ResidualMonthlyIncome": 1867.3285087387085,
+        "CreditVelocity": 0.52,
+        # keep this block the single source of truth for computed ratios
+    }
+}
+    demo2 = {
+  "identity": {
+    "first_name": "Ava",
+    "last_name": "Martinez",
+    "age": 35
+  },
+  "credit_bureau_data": {
+    "credit_score": 780,
+    "credit_utilization": 0.25,
+    "total_credit_limit": 8000,
+    "total_balance": 2000,
+    "total_monthly_debt_payments": 1500,
+    "total_open_accounts": 12,
+    "credit_history_years": 8,
+    "delinquencies_24m": 0,
+    "derogatory_marks_any": False,
+    "recent_inquiries_6m": 8
+  },
+  "location": {
+    "postal_code": "123xx",
+    "residence_type": "mortgage",
+    "months_lived": 3,
+    "monthly_housing_cost": 1860
+  },
+  "family": {
+    "marital_status": "single",
+    "dependents_count": 2,
+    "dependents_expense_monthly": 600
+  },
+  "socioeconomic": {
+    "employment_status": "full_time",
+    "employment_duration_years": 0.1,
+    "industry": "Hospitality",
+    "title": "Bartender",
+    "annual_income": 1000
+  },
+  "application_context": {
+    "purchase_amount": 30000,
+    "term_months": 6
+  }
+}
+    out = agent4_predict_with_shap(demo2, MODEL_PATH, META_PATH, top_k=3)
     print(json.dumps(out, indent=2))
 
 

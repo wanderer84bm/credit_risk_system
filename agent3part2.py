@@ -47,6 +47,11 @@ def agent3part2(profile: Dict[str, Any], max_flags: int = 5) -> Dict[str, List[D
 
     derived = profile.get("derived_metrics", {})
     dti = derived.get("DTI")
+    pti = derived.get("PTI")
+    hcr = derived.get("HCR")
+    credit_velocity = derived.get("CreditVelocity")
+    residual_income = derived.get("ResidualMonthlyIncome")
+
    
    
 
@@ -78,10 +83,12 @@ def agent3part2(profile: Dict[str, Any], max_flags: int = 5) -> Dict[str, List[D
     payment = _safe_div(purchase_amount, term_months) if _is_num(purchase_amount) and _is_num(term_months) else None
 
     # PTI, HCR, CreditVelocity
+    '''
     pti = _safe_div(payment, monthly_income)
     dti = _safe_div(payment, monthly_income)
     hcr = _safe_div(monthly_housing, monthly_income) if _is_num(monthly_housing) else None
     credit_velocity = _safe_div(total_open, history_years) if _is_num(total_open) and _is_num(history_years) else None
+    '''
 
     # Utilization computed
     util_calc = None
@@ -140,16 +147,16 @@ def agent3part2(profile: Dict[str, Any], max_flags: int = 5) -> Dict[str, List[D
             add(1, "Credit history exceeds possible age", f"History {float(history_years):.1f}y > allowable {max_possible:.1f}y for age {age}.", "high")
 
     # 4) High PTI
-    if _is_num(pti) is not None:
+    if _is_num(pti):
         max_pti = 0.15
         if pti > max_pti:
-            add(1, "High PTI", f"PTI {float(pti):.1f}y > allowable {max_pti:.1f} ", "high")
+            add(1, "High PTI", f"PTI {float(pti)} > allowable {max_pti} ", "high")
 
     # 5) High DTI 
-    if _is_num(dti) is not None:
+    if _is_num(dti):
         max_dti = 0.43
         if dti > max_dti:
-            add(1, "High DTI", f"DTI {float(dti):.1f}y > allowable {max_dti:.1f} ", "high")
+            add(1, "High DTI", f"DTI {float(dti)}y > allowable {max_dti} ", "high")
 
 
     # 4) Employment vs Income
@@ -163,7 +170,7 @@ def agent3part2(profile: Dict[str, Any], max_flags: int = 5) -> Dict[str, List[D
 
     # 6) HCR stress
     if _is_num(monthly_housing) and monthly_income is not None:
-        if hcr is not None:
+        if _is_num(hcr):
             if hcr >= 0.50:
                 add(2, "Housing cost burden (severe)", f"HCR {_fmt_pct(hcr)} ≥ 50% of monthly income.", "high")
             elif 0.30 <= hcr < 0.50:
@@ -254,3 +261,5 @@ def score_flags_v0(payload: Any) -> Dict[str, Any]:
         "ignored": max(0, len(flags) - len(kept)),
         "breakdown": breakdown
     }
+
+

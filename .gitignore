@@ -2,4 +2,6 @@
 not_needed/
 .env
 .venv/
-__pycache__/
+__pycache__/agent4new.py
+/agent4new.py
+agent4new.py

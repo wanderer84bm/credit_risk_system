@@ -19,7 +19,7 @@ def _map_ml_flags_to_codes(ml_flags):
     codes = []
     for f in ml_flags or []:
         code = rc.ML_FLAG_TO_CODE.get((f or "").strip().upper(), "")
-        if code: rc.append(code)
+        if code: codes.append(code)
     return codes
 
 def _map_det_flags_to_codes(det_flags):
