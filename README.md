@@ -1,7 +1,7 @@
 
 # BNPL Credit Risk — agentic pipeline
 
-**Goal:** build an agentic BNPL risk pipeline and optimize **Balanced Accuracy** (BA) end-to-end on a 1k stratified sample. **Target BA > 0.75.**
+**Goal:** build an agentic BNPL risk pipeline and optimize **Balanced Accuracy** (BA) end-to-end on a 1k stratified sample. **Current BA > 0.779.**
 
 **Out of scope (for this repo/run):**
 - No per-row Lyzr/LLM calls (speed/$)
@@ -61,28 +61,21 @@ final\_score = 0.8 \* ML\_risk + 0.2 \* flag\_points
 
 ```
 
-Accuracy:           0.413
-Balanced Accuracy:  0.609
-Precision (class=1):0.246
-Recall (class=1):   0.935
-F1 (class=1):       0.389
-Confusion matrix \[rows=true (0,1); cols=pred (0,1)]:
-\[\[226 574]
-\[ 13 187]]
-
+Accuracy:           0.815
+Balanced Accuracy:  0.779
+Precision (class=1):0.527
+Recall (class=1):   0.720
+F1 (class=1):       0.609
+Confusion matrix (rows=true, cols=pred) [0,1]:
+[[671 129]
+ [ 56 144]]
 ````
 
-**Errors:** 738 / 1000 rows
+
 
 ---
 
-## What I tried (didn’t move BA)
 
-- **Import/cache cleanup:** earlier **0.725 BA** was a mirage from mixed imports.  
-- **Changing cutoffs:** adjusted across 20–60; didn’t improve BA (best single run at cutoff **23** hit ~**0.602 BA**).  
-- **Gate & flags variants:** tightened/loosened gate.  
-- **Alt model:** swapped classifier → **lower BA** than current HGBM; reverted.  
-- **Weights:** different ML vs flags splits (e.g., **0.7/0.3** and **0.9/0.1** ML weight) — no durable BA lift.
 
 ---
 
@@ -108,14 +101,6 @@ python eval.py      # prints metrics and writes eval.csv
 * **eval.csv:** per-row results (true label, decision, scores/codes)
 
 LLM calls are off by default for testing.
-
----
-
-## Known issues
-
-* **Old BA 0.72 ≠ real:** stale imports/global state; cleared.
-* multiple errors during eval (refer `eval_results.csv`)
-* **Model details:** see `agent4.csv` for configuration/notes (HGBM + SHAP).
 
 ---
 
