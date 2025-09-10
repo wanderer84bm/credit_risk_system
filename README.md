@@ -99,7 +99,7 @@ python3 eval.py      # prints metrics and writes eval.csv
 ```bash
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-python3 streamlit ui_pipeline.oy     
+python3 streamlit ui_pipeline.py     
 ````
 
 **Outputs**
