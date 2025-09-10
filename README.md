@@ -42,7 +42,7 @@ final_score = 0.8 * ML_risk + 0.2 * flag_points
   - Red: **+12** (high), **+10** (med), **+8** (low)  
   - Green: **−15** (high), **−10** (med), **−5** (low)
 - In this eval, **LLM flags are off**.
-- **Cutoff & rule:** `final_score ≥ 23 → REJECT`, else APPROVE.
+- **Cutoff & rule:** `final_score ≥ 23 → REJECT`, `final_score > 30 → REJECT`.
 - **Binary labels:** APPROVE = **0**, REJECT = **1**.
 - **Model note:** the model computes **probability of default (PD)** and it’s scaled ×100 to get the **risk score**.
 
@@ -61,14 +61,14 @@ final_score = 0.8 * ML_risk + 0.2 * flag_points
 
 ```
 
-Accuracy:           0.815
-Balanced Accuracy:  0.779
-Precision (class=1):0.527
-Recall (class=1):   0.720
-F1 (class=1):       0.609
+Accuracy:           0.702
+Balanced Accuracy:  0.729
+Precision (class=1):0.380
+Recall (class=1):   0.775
+F1 (class=1):       0.510
 Confusion matrix (rows=true, cols=pred) [0,1]:
-[[671 129]
- [ 56 144]]
+[[547 253]
+ [ 45 155]]
 ````
 
 
@@ -90,9 +90,16 @@ Confusion matrix (rows=true, cols=pred) [0,1]:
 ## How to run
 
 ```bash
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+python3 eval.py      # prints metrics and writes eval.csv
+````
+
+## To run a single profile 
+```bash
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-python eval.py      # prints metrics and writes eval.csv
+python3 streamlit ui_pipeline.oy     
 ````
 
 **Outputs**
@@ -101,6 +108,10 @@ python eval.py      # prints metrics and writes eval.csv
 * **eval.csv:** per-row results (true label, decision, scores/codes)
 
 LLM calls are off by default for testing.
+
+For a single profile:
+Outputs decision and reasoning. 
+
 
 ---
 
