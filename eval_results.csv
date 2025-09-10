@@ -1,88 +1,88 @@
 true_label,decision,pred_label,risk_score,final_score,basis,codes,labels,pd_hat
-0,APPROVE,0,15.0,14.0,flags,R006,Debt-to-Income (DTI) too high / affordability,0.15
-0,APPROVE,0,13.0,10.4,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.13
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+0,APPROVE,0,13.0,10.4,flags,R001|R003,Credit score below policy|Revolving utilization too high / over-limit,0.13
 0,APPROVE,0,13.0,12.4,flags,R006|R007,Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.13
 0,APPROVE,0,22.0,17.6,flags,R001|R002,Credit score below policy|Limited/volatile credit history,0.22
 0,APPROVE,0,19.0,15.200000000000001,flags,R001,Credit score below policy,0.19
-0,APPROVE,0,13.0,12.4,flags,R006,Debt-to-Income (DTI) too high / affordability,0.13
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
-0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
+0,APPROVE,0,23.0,18.400000000000002,flags,,,0.23
 1,REJECT,1,57.0,45.6,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.57
-0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,13.0,10.4,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.13
 0,APPROVE,0,13.0,10.4,flags,,,0.13
 0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
-0,REJECT,1,30.0,24.0,flags,R001,Credit score below policy,0.3
+0,REJECT,1,30.0,24.0,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.3
 0,APPROVE,0,23.0,20.400000000000002,flags,R006,Debt-to-Income (DTI) too high / affordability,0.23
 1,APPROVE,0,7.0,5.6000000000000005,flags,,,0.07
 0,APPROVE,0,23.0,18.400000000000002,flags,R006,Debt-to-Income (DTI) too high / affordability,0.23
 0,APPROVE,0,18.0,14.4,flags,,,0.18
-0,REJECT,1,30.0,24.0,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.3
-0,APPROVE,0,18.0,14.4,flags,,,0.18
-0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,REJECT,1,33.0,26.400000000000002,flags,R001,Credit score below policy,0.33
 0,APPROVE,0,22.0,19.6,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.22
 0,APPROVE,0,13.0,10.4,flags,,,0.13
-0,APPROVE,0,0.0,0.0,flags,,,0.0
-0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,23.0,18.400000000000002,flags,,,0.23
-0,APPROVE,0,13.0,10.4,flags,R006,Debt-to-Income (DTI) too high / affordability,0.13
 0,APPROVE,0,13.0,10.4,flags,,,0.13
 0,APPROVE,0,13.0,10.4,flags,,,0.13
-0,APPROVE,0,23.0,18.400000000000002,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.23
+0,APPROVE,0,13.0,10.4,flags,,,0.13
+0,APPROVE,0,23.0,18.400000000000002,flags,R007,Payment-to-Income (PTI) too high,0.23
 0,REJECT,1,33.0,26.400000000000002,flags,R001|R003,Credit score below policy|Revolving utilization too high / over-limit,0.33
 1,APPROVE,0,13.0,10.4,flags,R001|R002,Credit score below policy|Limited/volatile credit history,0.13
-0,REJECT,1,30.0,26.0,flags,R006,Debt-to-Income (DTI) too high / affordability,0.3
+0,REJECT,1,30.0,26.0,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.3
 0,APPROVE,0,18.0,14.4,flags,R001,Credit score below policy,0.18
-0,REJECT,1,33.0,26.400000000000002,flags,,,0.33
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,23.0,20.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.23
 0,APPROVE,0,22.0,17.6,flags,R007,Payment-to-Income (PTI) too high,0.22
-0,APPROVE,0,13.0,10.4,flags,,,0.13
-0,APPROVE,0,15.0,12.0,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.15
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+0,APPROVE,0,15.0,12.0,flags,R006,Debt-to-Income (DTI) too high / affordability,0.15
 0,REJECT,1,33.0,28.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.33
-0,APPROVE,0,13.0,10.4,flags,,,0.13
-0,APPROVE,0,23.0,18.400000000000002,flags,,,0.23
+0,APPROVE,0,13.0,10.4,flags,R007,Payment-to-Income (PTI) too high,0.13
+0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
 1,REJECT,1,40.0,32.0,flags,R001,Credit score below policy,0.4
-0,APPROVE,0,12.0,9.600000000000001,flags,,,0.12
-0,APPROVE,0,18.0,16.4,flags,R006,Debt-to-Income (DTI) too high / affordability,0.18
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,16.0,12.8,flags,R007,Payment-to-Income (PTI) too high,0.16
 1,APPROVE,0,23.0,18.400000000000002,flags,R001|R002,Credit score below policy|Limited/volatile credit history,0.23
 0,APPROVE,0,7.0,5.6000000000000005,flags,,,0.07
 1,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
 1,APPROVE,0,22.0,17.6,flags,R003,Revolving utilization too high / over-limit,0.22
 0,APPROVE,0,18.0,16.4,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.18
-0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
+0,APPROVE,0,13.0,10.4,flags,,,0.13
 1,REJECT,1,62.0,49.6,flags,R001|R002,Credit score below policy|Limited/volatile credit history,0.62
 0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
 1,APPROVE,0,16.0,14.8,flags,R006,Debt-to-Income (DTI) too high / affordability,0.16
-0,APPROVE,0,13.0,10.4,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.13
-0,APPROVE,0,13.0,10.4,flags,,,0.13
+0,APPROVE,0,13.0,10.4,flags,R007,Payment-to-Income (PTI) too high,0.13
+0,APPROVE,0,13.0,10.4,flags,R003,Revolving utilization too high / over-limit,0.13
 0,REJECT,1,62.0,51.6,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.62
-0,APPROVE,0,22.0,19.6,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.22
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,REJECT,1,33.0,26.400000000000002,flags,R001|R002,Credit score below policy|Limited/volatile credit history,0.33
-0,REJECT,1,33.0,26.400000000000002,flags,R001,Credit score below policy,0.33
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 1,REJECT,1,62.0,49.6,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.62
 1,REJECT,1,40.0,32.0,flags,R001|R003,Credit score below policy|Revolving utilization too high / over-limit,0.4
 0,APPROVE,0,0.0,0.0,flags,,,0.0
 0,APPROVE,0,18.0,14.4,flags,R001,Credit score below policy,0.18
 0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
-0,APPROVE,0,16.0,12.8,flags,R001,Credit score below policy,0.16
+0,APPROVE,0,16.0,12.8,flags,,,0.16
 0,REJECT,1,33.0,26.400000000000002,flags,R001|R006|R007,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.33
-0,APPROVE,0,22.0,17.6,flags,R007,Payment-to-Income (PTI) too high,0.22
+0,APPROVE,0,22.0,17.6,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.22
 0,REJECT,1,57.0,45.6,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.57
-0,REJECT,1,30.0,26.0,flags,R006,Debt-to-Income (DTI) too high / affordability,0.3
-0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
+0,REJECT,1,30.0,26.0,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.3
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,22.0,17.6,flags,R001|R006|R007,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.22
-0,APPROVE,0,13.0,10.4,flags,,,0.13
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,13.0,12.4,flags,R006|R003,Debt-to-Income (DTI) too high / affordability|Revolving utilization too high / over-limit,0.13
-0,APPROVE,0,23.0,18.400000000000002,flags,R006,Debt-to-Income (DTI) too high / affordability,0.23
+0,APPROVE,0,23.0,18.400000000000002,flags,,,0.23
 0,APPROVE,0,0.0,2.0,flags,R006|R007,Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.0
-0,APPROVE,0,15.0,12.0,flags,,,0.15
-0,REJECT,1,30.0,24.0,flags,R003,Revolving utilization too high / over-limit,0.3
+0,APPROVE,0,15.0,12.0,flags,R006,Debt-to-Income (DTI) too high / affordability,0.15
+0,REJECT,1,30.0,24.0,flags,R006|R003,Debt-to-Income (DTI) too high / affordability|Revolving utilization too high / over-limit,0.3
 0,APPROVE,0,13.0,12.4,flags,R006,Debt-to-Income (DTI) too high / affordability,0.13
 0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
-0,APPROVE,0,18.0,14.4,flags,,,0.18
-0,REJECT,1,33.0,26.400000000000002,flags,,,0.33
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+0,REJECT,1,33.0,26.400000000000002,flags,R001,Credit score below policy,0.33
 1,REJECT,1,30.0,24.0,flags,R006,Debt-to-Income (DTI) too high / affordability,0.3
 0,APPROVE,0,23.0,18.400000000000002,flags,R006|R002,Debt-to-Income (DTI) too high / affordability|Limited/volatile credit history,0.23
 0,APPROVE,0,16.0,14.8,flags,R006,Debt-to-Income (DTI) too high / affordability,0.16
@@ -94,20 +94,20 @@ true_label,decision,pred_label,risk_score,final_score,basis,codes,labels,pd_hat
 0,APPROVE,0,13.0,12.4,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.13
 0,APPROVE,0,7.0,5.6000000000000005,flags,R003,Revolving utilization too high / over-limit,0.07
 1,REJECT,1,40.0,34.0,flags,R001|R006|R003,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Revolving utilization too high / over-limit,0.4
-0,APPROVE,0,13.0,10.4,flags,R007,Payment-to-Income (PTI) too high,0.13
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,19.0,15.200000000000001,flags,R006,Debt-to-Income (DTI) too high / affordability,0.19
-1,REJECT,1,30.0,24.0,flags,R001|R006|R002,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Limited/volatile credit history,0.3
-1,REJECT,1,40.0,32.0,flags,R001|R003,Credit score below policy|Revolving utilization too high / over-limit,0.4
+1,REJECT,1,,,policy,P001,Policy/eligibility,
+1,REJECT,1,40.0,32.0,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.4
 0,APPROVE,0,13.0,12.4,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.13
-0,APPROVE,0,22.0,17.6,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.22
-0,REJECT,1,33.0,26.400000000000002,flags,R007,Payment-to-Income (PTI) too high,0.33
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,23.0,20.400000000000002,flags,R006,Debt-to-Income (DTI) too high / affordability,0.23
 0,APPROVE,0,15.0,12.0,flags,,,0.15
 0,APPROVE,0,13.0,10.4,flags,,,0.13
 0,APPROVE,0,22.0,17.6,flags,R001,Credit score below policy,0.22
 0,APPROVE,0,22.0,17.6,flags,R001,Credit score below policy,0.22
 0,APPROVE,0,23.0,20.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.23
-0,APPROVE,0,13.0,12.4,flags,R006,Debt-to-Income (DTI) too high / affordability,0.13
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,19.0,15.200000000000001,flags,,,0.19
 0,REJECT,1,30.0,26.0,flags,R006,Debt-to-Income (DTI) too high / affordability,0.3
 0,APPROVE,0,13.0,10.4,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.13
@@ -117,137 +117,137 @@ true_label,decision,pred_label,risk_score,final_score,basis,codes,labels,pd_hat
 1,APPROVE,0,23.0,18.400000000000002,flags,R006,Debt-to-Income (DTI) too high / affordability,0.23
 0,APPROVE,0,15.0,12.0,flags,R001,Credit score below policy,0.15
 1,REJECT,1,33.0,28.400000000000002,flags,R006,Debt-to-Income (DTI) too high / affordability,0.33
-0,APPROVE,0,23.0,18.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.23
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,13.0,10.4,flags,,,0.13
 0,REJECT,1,33.0,28.400000000000002,flags,R013|R001,Data integrity issue|Credit score below policy,0.33
 0,APPROVE,0,22.0,17.6,flags,,,0.22
-1,REJECT,1,33.0,26.400000000000002,flags,R001,Credit score below policy,0.33
-0,APPROVE,0,23.0,18.400000000000002,flags,R006,Debt-to-Income (DTI) too high / affordability,0.23
+1,REJECT,1,33.0,26.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.33
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,23.0,18.400000000000002,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.23
 0,APPROVE,0,13.0,10.4,flags,,,0.13
 1,REJECT,1,40.0,32.0,flags,R001,Credit score below policy,0.4
 0,APPROVE,0,13.0,10.4,flags,,,0.13
 0,APPROVE,0,22.0,17.6,flags,,,0.22
-0,APPROVE,0,23.0,18.400000000000002,flags,,,0.23
+0,APPROVE,0,23.0,18.400000000000002,flags,R007,Payment-to-Income (PTI) too high,0.23
 0,APPROVE,0,22.0,17.6,flags,,,0.22
-0,APPROVE,0,13.0,10.4,flags,,,0.13
-1,REJECT,1,33.0,26.400000000000002,flags,R001|R002,Credit score below policy|Limited/volatile credit history,0.33
+0,APPROVE,0,13.0,10.4,flags,R007,Payment-to-Income (PTI) too high,0.13
+1,REJECT,1,33.0,26.400000000000002,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.33
 1,APPROVE,0,23.0,18.400000000000002,flags,R007|R002,Payment-to-Income (PTI) too high|Limited/volatile credit history,0.23
 1,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
-1,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
+1,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,0.0,0.0,flags,,,0.0
 0,APPROVE,0,18.0,14.4,flags,,,0.18
-0,APPROVE,0,13.0,10.4,flags,R007|R003,Payment-to-Income (PTI) too high|Revolving utilization too high / over-limit,0.13
-0,REJECT,1,30.0,24.0,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.3
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,REJECT,1,40.0,34.0,flags,R006,Debt-to-Income (DTI) too high / affordability,0.4
-0,APPROVE,0,18.0,14.4,flags,,,0.18
+0,APPROVE,0,18.0,14.4,flags,R001,Credit score below policy,0.18
 0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
-0,APPROVE,0,19.0,15.200000000000001,flags,,,0.19
+0,APPROVE,0,19.0,15.200000000000001,flags,R002,Limited/volatile credit history,0.19
 0,APPROVE,0,13.0,10.4,flags,R006|R007,Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.13
 0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
-1,REJECT,1,40.0,32.0,flags,R001|R002,Credit score below policy|Limited/volatile credit history,0.4
+1,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,13.0,10.4,flags,,,0.13
 0,APPROVE,0,13.0,10.4,flags,,,0.13
 0,APPROVE,0,0.0,0.0,flags,,,0.0
 0,APPROVE,0,23.0,18.400000000000002,flags,R001|R003,Credit score below policy|Revolving utilization too high / over-limit,0.23
-1,APPROVE,0,22.0,17.6,flags,R001|R003,Credit score below policy|Revolving utilization too high / over-limit,0.22
-0,APPROVE,0,13.0,10.4,flags,R002,Limited/volatile credit history,0.13
-0,APPROVE,0,15.0,12.0,flags,,,0.15
-0,APPROVE,0,13.0,10.4,flags,R007,Payment-to-Income (PTI) too high,0.13
-1,APPROVE,0,18.0,14.4,flags,R001,Credit score below policy,0.18
-1,REJECT,1,33.0,28.800000000000004,flags,R001|R007|R003,Credit score below policy|Payment-to-Income (PTI) too high|Revolving utilization too high / over-limit,0.33
-0,APPROVE,0,13.0,10.4,flags,,,0.13
-0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
-0,APPROVE,0,0.0,0.0,flags,R006,Debt-to-Income (DTI) too high / affordability,0.0
-0,APPROVE,0,18.0,14.4,flags,,,0.18
-0,APPROVE,0,13.0,12.4,flags,R006,Debt-to-Income (DTI) too high / affordability,0.13
-0,REJECT,1,30.0,26.0,flags,R006,Debt-to-Income (DTI) too high / affordability,0.3
-0,APPROVE,0,13.0,10.4,flags,R002,Limited/volatile credit history,0.13
+1,REJECT,1,,,policy,P001,Policy/eligibility,
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+1,REJECT,1,,,policy,P001,Policy/eligibility,
+1,REJECT,1,,,policy,P001,Policy/eligibility,
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+0,APPROVE,0,23.0,18.400000000000002,flags,,,0.23
+0,APPROVE,0,0.0,0.0,flags,,,0.0
+0,APPROVE,0,18.0,14.4,flags,R001,Credit score below policy,0.18
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+0,REJECT,1,30.0,26.0,flags,R006|R002,Debt-to-Income (DTI) too high / affordability|Limited/volatile credit history,0.3
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,REJECT,1,30.0,26.0,flags,R001|R006|R007,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.3
 0,APPROVE,0,23.0,20.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.23
-0,APPROVE,0,19.0,15.200000000000001,flags,R001,Credit score below policy,0.19
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 1,REJECT,1,62.0,49.6,flags,R001,Credit score below policy,0.62
 1,REJECT,1,40.0,34.0,flags,R001|R006|R002,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Limited/volatile credit history,0.4
 0,APPROVE,0,23.0,18.400000000000002,flags,,,0.23
-0,APPROVE,0,23.0,18.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.23
+0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
 0,APPROVE,0,22.0,17.6,flags,R001,Credit score below policy,0.22
 0,APPROVE,0,18.0,14.4,flags,R001|R006|R002,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Limited/volatile credit history,0.18
 1,REJECT,1,53.0,42.400000000000006,flags,R001,Credit score below policy,0.53
-1,REJECT,1,39.0,33.2,flags,R001|R006|R007,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.39
+1,REJECT,1,,,policy,P001,Policy/eligibility,
 1,REJECT,1,30.0,26.0,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.3
-0,REJECT,1,33.0,26.400000000000002,flags,R001|R002,Credit score below policy|Limited/volatile credit history,0.33
-1,APPROVE,0,13.0,10.4,flags,,,0.13
-0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
-0,APPROVE,0,13.0,10.4,flags,,,0.13
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+1,REJECT,1,,,policy,P001,Policy/eligibility,
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+0,APPROVE,0,13.0,10.4,flags,R007,Payment-to-Income (PTI) too high,0.13
 1,REJECT,1,39.0,33.2,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.39
-0,APPROVE,0,18.0,16.4,flags,R001|R002,Credit score below policy|Limited/volatile credit history,0.18
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
-1,APPROVE,0,13.0,10.4,flags,,,0.13
+1,REJECT,1,,,policy,P001,Policy/eligibility,
 1,REJECT,1,57.0,47.6,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.57
 0,APPROVE,0,23.0,18.400000000000002,flags,,,0.23
 0,APPROVE,0,15.0,12.0,flags,,,0.15
-0,REJECT,1,30.0,24.0,flags,R002,Limited/volatile credit history,0.3
+0,REJECT,1,30.0,24.0,flags,R001|R002,Credit score below policy|Limited/volatile credit history,0.3
 1,APPROVE,0,15.0,12.0,flags,R006,Debt-to-Income (DTI) too high / affordability,0.15
-1,REJECT,1,33.0,26.400000000000002,flags,R001|R007|R003,Credit score below policy|Payment-to-Income (PTI) too high|Revolving utilization too high / over-limit,0.33
-0,APPROVE,0,13.0,12.4,flags,R006,Debt-to-Income (DTI) too high / affordability,0.13
+1,REJECT,1,33.0,26.400000000000002,flags,R007|R003,Payment-to-Income (PTI) too high|Revolving utilization too high / over-limit,0.33
+0,APPROVE,0,13.0,12.4,flags,R006|R007,Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.13
 0,APPROVE,0,13.0,12.4,flags,R006,Debt-to-Income (DTI) too high / affordability,0.13
 0,APPROVE,0,22.0,17.6,flags,R001|R003,Credit score below policy|Revolving utilization too high / over-limit,0.22
-0,APPROVE,0,18.0,14.4,flags,,,0.18
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
 0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
 1,APPROVE,0,23.0,20.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.23
 0,APPROVE,0,22.0,17.6,flags,R006|R003,Debt-to-Income (DTI) too high / affordability|Revolving utilization too high / over-limit,0.22
-1,APPROVE,0,13.0,10.4,flags,R007|R002,Payment-to-Income (PTI) too high|Limited/volatile credit history,0.13
+1,REJECT,1,,,policy,P001,Policy/eligibility,
 0,REJECT,1,40.0,34.4,flags,R001|R006|R007,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.4
-0,APPROVE,0,15.0,12.0,flags,R007,Payment-to-Income (PTI) too high,0.15
+0,APPROVE,0,15.0,12.0,flags,,,0.15
 1,REJECT,1,57.0,45.6,flags,R001,Credit score below policy,0.57
-0,APPROVE,0,11.0,8.8,flags,,,0.11
-0,APPROVE,0,23.0,18.400000000000002,flags,,,0.23
+0,APPROVE,0,11.0,8.8,flags,R001,Credit score below policy,0.11
+0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
 0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
 1,REJECT,1,30.0,24.0,flags,R001,Credit score below policy,0.3
 0,APPROVE,0,23.0,20.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.23
-0,APPROVE,0,22.0,19.6,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.22
+0,APPROVE,0,22.0,19.6,flags,R001|R006|R007,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.22
 1,REJECT,1,62.0,49.6,flags,R001|R003,Credit score below policy|Revolving utilization too high / over-limit,0.62
-0,APPROVE,0,18.0,14.4,flags,,,0.18
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,16.0,12.8,flags,,,0.16
 0,APPROVE,0,18.0,18.8,flags,R006|R007|R002,Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high|Limited/volatile credit history,0.18
 0,APPROVE,0,13.0,10.4,flags,,,0.13
 1,REJECT,1,33.0,26.400000000000002,flags,,,0.33
 0,APPROVE,0,18.0,14.4,flags,R007,Payment-to-Income (PTI) too high,0.18
 0,APPROVE,0,22.0,17.6,flags,R001|R003,Credit score below policy|Revolving utilization too high / over-limit,0.22
-1,REJECT,1,40.0,32.0,flags,R007,Payment-to-Income (PTI) too high,0.4
+1,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
 0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
 0,APPROVE,0,23.0,18.400000000000002,flags,,,0.23
-0,APPROVE,0,23.0,20.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.23
-1,APPROVE,0,23.0,18.400000000000002,flags,R001|R006|R007,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.23
+0,APPROVE,0,23.0,20.400000000000002,flags,R006,Debt-to-Income (DTI) too high / affordability,0.23
+1,APPROVE,0,23.0,18.400000000000002,flags,R006|R007,Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.23
 0,APPROVE,0,13.0,10.4,flags,,,0.13
-1,APPROVE,0,22.0,17.6,flags,R001|R006|R007,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.22
+1,APPROVE,0,22.0,17.6,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.22
 0,APPROVE,0,22.0,17.6,flags,,,0.22
-1,APPROVE,0,23.0,18.400000000000002,flags,R002,Limited/volatile credit history,0.23
+1,REJECT,1,,,policy,P001,Policy/eligibility,
 0,REJECT,1,40.0,32.0,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.4
-0,APPROVE,0,15.0,12.0,flags,R001,Credit score below policy,0.15
+0,APPROVE,0,15.0,12.0,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.15
 1,APPROVE,0,23.0,20.400000000000002,flags,R006|R002,Debt-to-Income (DTI) too high / affordability|Limited/volatile credit history,0.23
-0,REJECT,1,30.0,24.0,flags,R001|R002,Credit score below policy|Limited/volatile credit history,0.3
-0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
-0,APPROVE,0,13.0,10.4,flags,R007,Payment-to-Income (PTI) too high,0.13
-1,REJECT,1,40.0,32.0,flags,R002,Limited/volatile credit history,0.4
-0,APPROVE,0,15.0,12.0,flags,R001,Credit score below policy,0.15
+0,REJECT,1,30.0,24.0,flags,,,0.3
+0,APPROVE,0,23.0,18.400000000000002,flags,,,0.23
+0,APPROVE,0,13.0,10.4,flags,R006,Debt-to-Income (DTI) too high / affordability,0.13
+1,REJECT,1,40.0,32.0,flags,R006,Debt-to-Income (DTI) too high / affordability,0.4
+0,APPROVE,0,15.0,12.0,flags,,,0.15
 0,APPROVE,0,18.0,14.4,flags,,,0.18
-1,REJECT,1,40.0,34.0,flags,R001|R006|R002,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Limited/volatile credit history,0.4
+1,REJECT,1,40.0,34.0,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.4
 0,APPROVE,0,23.0,20.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.23
-0,APPROVE,0,23.0,18.400000000000002,flags,R007,Payment-to-Income (PTI) too high,0.23
-0,APPROVE,0,22.0,17.6,flags,R001,Credit score below policy,0.22
-0,APPROVE,0,7.0,5.6000000000000005,flags,R006,Debt-to-Income (DTI) too high / affordability,0.07
+0,APPROVE,0,23.0,18.400000000000002,flags,,,0.23
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+0,APPROVE,0,7.0,5.6000000000000005,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.07
 0,REJECT,1,33.0,28.400000000000002,flags,R006,Debt-to-Income (DTI) too high / affordability,0.33
 0,APPROVE,0,13.0,10.4,flags,,,0.13
-0,REJECT,1,33.0,26.400000000000002,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.33
+0,REJECT,1,33.0,26.400000000000002,flags,R001,Credit score below policy,0.33
 0,REJECT,1,30.0,24.0,flags,R001,Credit score below policy,0.3
-0,REJECT,1,33.0,26.400000000000002,flags,R001|R002,Credit score below policy|Limited/volatile credit history,0.33
-1,REJECT,1,62.0,52.0,flags,R001|R006|R003,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Revolving utilization too high / over-limit,0.62
-0,APPROVE,0,13.0,10.4,flags,R001|R007|R002,Credit score below policy|Payment-to-Income (PTI) too high|Limited/volatile credit history,0.13
+0,REJECT,1,33.0,26.400000000000002,flags,R001|R006|R002,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Limited/volatile credit history,0.33
+1,REJECT,1,,,policy,P001,Policy/eligibility,
+0,APPROVE,0,13.0,10.4,flags,R001|R002,Credit score below policy|Limited/volatile credit history,0.13
 1,REJECT,1,53.0,42.400000000000006,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.53
-0,APPROVE,0,23.0,18.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.23
+0,APPROVE,0,23.0,18.400000000000002,flags,R006|R007,Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.23
 0,APPROVE,0,18.0,16.4,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.18
 1,REJECT,1,42.0,33.6,flags,R001,Credit score below policy,0.42
 0,APPROVE,0,13.0,10.4,flags,,,0.13
@@ -256,77 +256,77 @@ true_label,decision,pred_label,risk_score,final_score,basis,codes,labels,pd_hat
 1,APPROVE,0,23.0,18.400000000000002,flags,,,0.23
 0,REJECT,1,30.0,24.0,flags,R001,Credit score below policy,0.3
 1,REJECT,1,57.0,50.0,flags,R001|R006|R007,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.57
-0,REJECT,1,40.0,32.0,flags,R001,Credit score below policy,0.4
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,REJECT,1,30.0,26.0,flags,R001|R006|R003,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Revolving utilization too high / over-limit,0.3
-0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,7.0,5.6000000000000005,flags,,,0.07
 0,APPROVE,0,7.0,5.6000000000000005,flags,R001,Credit score below policy,0.07
-0,APPROVE,0,22.0,17.6,flags,R003,Revolving utilization too high / over-limit,0.22
+0,APPROVE,0,22.0,17.6,flags,R006,Debt-to-Income (DTI) too high / affordability,0.22
 0,APPROVE,0,18.0,14.4,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.18
 0,APPROVE,0,18.0,14.4,flags,,,0.18
 0,APPROVE,0,23.0,18.400000000000002,flags,,,0.23
 1,REJECT,1,42.0,33.6,flags,R006,Debt-to-Income (DTI) too high / affordability,0.42
 0,APPROVE,0,23.0,18.400000000000002,flags,R007,Payment-to-Income (PTI) too high,0.23
-0,APPROVE,0,23.0,18.400000000000002,flags,R006,Debt-to-Income (DTI) too high / affordability,0.23
-0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
+0,APPROVE,0,23.0,18.400000000000002,flags,,,0.23
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,23.0,18.400000000000002,flags,R007,Payment-to-Income (PTI) too high,0.23
 0,APPROVE,0,18.0,14.4,flags,,,0.18
-0,REJECT,1,40.0,34.0,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.4
-0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
-0,APPROVE,0,22.0,17.6,flags,R003,Revolving utilization too high / over-limit,0.22
+0,REJECT,1,40.0,34.0,flags,R006,Debt-to-Income (DTI) too high / affordability,0.4
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,0.0,0.0,flags,,,0.0
 0,REJECT,1,40.0,32.0,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.4
 0,REJECT,1,33.0,26.400000000000002,flags,R001,Credit score below policy,0.33
-0,APPROVE,0,23.0,20.400000000000002,flags,R006,Debt-to-Income (DTI) too high / affordability,0.23
+0,APPROVE,0,23.0,20.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.23
 0,APPROVE,0,22.0,20.0,flags,R006|R007,Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.22
 0,APPROVE,0,16.0,12.8,flags,,,0.16
 1,REJECT,1,62.0,49.6,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.62
 0,REJECT,1,40.0,32.0,flags,,,0.4
 0,APPROVE,0,23.0,18.400000000000002,flags,R001|R002,Credit score below policy|Limited/volatile credit history,0.23
 1,REJECT,1,30.0,24.0,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.3
-0,REJECT,1,30.0,26.0,flags,R001|R006|R007,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.3
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,REJECT,1,40.0,32.0,flags,R001,Credit score below policy,0.4
-0,APPROVE,0,23.0,20.400000000000002,flags,R001|R006|R002,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Limited/volatile credit history,0.23
+0,APPROVE,0,23.0,20.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.23
 0,APPROVE,0,23.0,20.400000000000002,flags,R006,Debt-to-Income (DTI) too high / affordability,0.23
 0,REJECT,1,30.0,24.0,flags,,,0.3
-0,APPROVE,0,23.0,18.400000000000002,flags,R007,Payment-to-Income (PTI) too high,0.23
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,22.0,19.6,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.22
-0,APPROVE,0,23.0,20.400000000000002,flags,R006|R007,Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.23
-0,APPROVE,0,7.0,5.6000000000000005,flags,R001,Credit score below policy,0.07
+0,APPROVE,0,23.0,20.400000000000002,flags,R001|R006|R007,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.23
+0,APPROVE,0,7.0,5.6000000000000005,flags,,,0.07
 0,APPROVE,0,23.0,20.400000000000002,flags,R006,Debt-to-Income (DTI) too high / affordability,0.23
 0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
 0,APPROVE,0,18.0,14.4,flags,R001,Credit score below policy,0.18
-1,REJECT,1,40.0,36.0,flags,R001|R006|R002,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Limited/volatile credit history,0.4
+1,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,22.0,17.6,flags,R007,Payment-to-Income (PTI) too high,0.22
 0,APPROVE,0,18.0,16.4,flags,R006|R007,Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.18
 0,APPROVE,0,13.0,10.4,flags,R007,Payment-to-Income (PTI) too high,0.13
 0,APPROVE,0,15.0,12.0,flags,R007,Payment-to-Income (PTI) too high,0.15
-0,APPROVE,0,23.0,18.400000000000002,flags,R001|R003,Credit score below policy|Revolving utilization too high / over-limit,0.23
+0,APPROVE,0,23.0,18.400000000000002,flags,R003,Revolving utilization too high / over-limit,0.23
 0,APPROVE,0,13.0,10.4,flags,,,0.13
-0,APPROVE,0,13.0,10.4,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.13
-0,APPROVE,0,23.0,18.400000000000002,flags,R007|R002,Payment-to-Income (PTI) too high|Limited/volatile credit history,0.23
-0,APPROVE,0,13.0,12.4,flags,R006,Debt-to-Income (DTI) too high / affordability,0.13
-0,REJECT,1,33.0,26.400000000000002,flags,R001|R003,Credit score below policy|Revolving utilization too high / over-limit,0.33
 0,APPROVE,0,13.0,10.4,flags,R007,Payment-to-Income (PTI) too high,0.13
+0,APPROVE,0,23.0,18.400000000000002,flags,R007|R002,Payment-to-Income (PTI) too high|Limited/volatile credit history,0.23
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+0,REJECT,1,33.0,26.400000000000002,flags,R001|R003,Credit score below policy|Revolving utilization too high / over-limit,0.33
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,13.0,12.4,flags,R006,Debt-to-Income (DTI) too high / affordability,0.13
 0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
-0,APPROVE,0,23.0,20.400000000000002,flags,R001|R006|R002,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Limited/volatile credit history,0.23
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,23.0,18.400000000000002,flags,R007,Payment-to-Income (PTI) too high,0.23
 1,REJECT,1,33.0,26.400000000000002,flags,R002,Limited/volatile credit history,0.33
 0,REJECT,1,33.0,26.400000000000002,flags,R006,Debt-to-Income (DTI) too high / affordability,0.33
-0,APPROVE,0,18.0,16.4,flags,R006,Debt-to-Income (DTI) too high / affordability,0.18
-0,APPROVE,0,23.0,18.400000000000002,flags,R002,Limited/volatile credit history,0.23
-0,APPROVE,0,18.0,14.4,flags,R007,Payment-to-Income (PTI) too high,0.18
-0,APPROVE,0,23.0,18.400000000000002,flags,R002,Limited/volatile credit history,0.23
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+0,APPROVE,0,23.0,18.400000000000002,flags,,,0.23
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,18.0,14.4,flags,R007,Payment-to-Income (PTI) too high,0.18
 0,APPROVE,0,23.0,18.400000000000002,flags,R006,Debt-to-Income (DTI) too high / affordability,0.23
-0,APPROVE,0,18.0,14.4,flags,R001|R002,Credit score below policy|Limited/volatile credit history,0.18
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 1,REJECT,1,30.0,24.0,flags,R001,Credit score below policy,0.3
-0,APPROVE,0,18.0,14.4,flags,R007,Payment-to-Income (PTI) too high,0.18
+0,APPROVE,0,18.0,14.4,flags,R006|R007,Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.18
 0,APPROVE,0,23.0,20.400000000000002,flags,R006,Debt-to-Income (DTI) too high / affordability,0.23
-0,APPROVE,0,22.0,17.6,flags,R001,Credit score below policy,0.22
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 1,APPROVE,0,13.0,10.4,flags,R007,Payment-to-Income (PTI) too high,0.13
-0,APPROVE,0,23.0,18.400000000000002,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.23
+0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
 0,APPROVE,0,16.0,12.8,flags,R002,Limited/volatile credit history,0.16
 0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
 0,APPROVE,0,13.0,12.4,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.13
@@ -334,216 +334,216 @@ true_label,decision,pred_label,risk_score,final_score,basis,codes,labels,pd_hat
 0,APPROVE,0,13.0,10.4,flags,,,0.13
 0,APPROVE,0,13.0,10.4,flags,R002,Limited/volatile credit history,0.13
 0,APPROVE,0,7.0,5.6000000000000005,flags,R001,Credit score below policy,0.07
-1,APPROVE,0,23.0,18.400000000000002,flags,R001|R006|R007,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.23
+1,REJECT,1,,,policy,P001,Policy/eligibility,
 1,REJECT,1,53.0,42.400000000000006,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.53
 1,REJECT,1,53.0,42.400000000000006,flags,R001|R006|R007,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.53
 0,APPROVE,0,13.0,10.4,flags,,,0.13
-0,APPROVE,0,13.0,12.4,flags,R006,Debt-to-Income (DTI) too high / affordability,0.13
-1,REJECT,1,57.0,45.6,flags,R001|R003,Credit score below policy|Revolving utilization too high / over-limit,0.57
+0,APPROVE,0,13.0,12.4,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.13
+1,REJECT,1,57.0,45.6,flags,R001,Credit score below policy,0.57
 0,APPROVE,0,7.0,5.6000000000000005,flags,,,0.07
-1,REJECT,1,33.0,28.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.33
-0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
-0,APPROVE,0,18.0,16.4,flags,R006,Debt-to-Income (DTI) too high / affordability,0.18
+1,REJECT,1,,,policy,P001,Policy/eligibility,
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
-0,APPROVE,0,18.0,16.4,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.18
-0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
-0,APPROVE,0,13.0,12.4,flags,R006,Debt-to-Income (DTI) too high / affordability,0.13
-0,APPROVE,0,13.0,10.4,flags,,,0.13
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+0,APPROVE,0,13.0,12.4,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.13
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,16.0,12.8,flags,R002,Limited/volatile credit history,0.16
-0,APPROVE,0,22.0,17.6,flags,R006|R007,Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.22
+0,APPROVE,0,22.0,17.6,flags,R001|R006|R007,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.22
 0,APPROVE,0,0.0,2.0,flags,R006,Debt-to-Income (DTI) too high / affordability,0.0
 0,APPROVE,0,23.0,18.400000000000002,flags,,,0.23
 0,APPROVE,0,13.0,10.4,flags,R007,Payment-to-Income (PTI) too high,0.13
 1,REJECT,1,30.0,24.0,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.3
 0,APPROVE,0,16.0,12.8,flags,R007|R002,Payment-to-Income (PTI) too high|Limited/volatile credit history,0.16
-0,APPROVE,0,22.0,17.6,flags,R001|R002,Credit score below policy|Limited/volatile credit history,0.22
+0,APPROVE,0,22.0,17.6,flags,R001,Credit score below policy,0.22
 0,APPROVE,0,13.0,10.4,flags,,,0.13
 0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
-0,REJECT,1,57.0,45.6,flags,R001,Credit score below policy,0.57
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,18.0,16.4,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.18
-0,APPROVE,0,7.0,5.6000000000000005,flags,,,0.07
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,REJECT,1,39.0,33.2,flags,R006,Debt-to-Income (DTI) too high / affordability,0.39
-1,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
-0,APPROVE,0,22.0,17.6,flags,R007,Payment-to-Income (PTI) too high,0.22
-1,REJECT,1,40.0,34.0,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.4
+1,APPROVE,0,23.0,18.400000000000002,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.23
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+1,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,13.0,10.4,flags,,,0.13
 1,REJECT,1,39.0,33.2,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.39
 0,APPROVE,0,23.0,18.400000000000002,flags,,,0.23
-0,APPROVE,0,23.0,20.800000000000004,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.23
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
 0,REJECT,1,30.0,24.0,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.3
 1,REJECT,1,30.0,24.0,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.3
 0,REJECT,1,33.0,28.400000000000002,flags,R001|R006|R003,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Revolving utilization too high / over-limit,0.33
-0,APPROVE,0,18.0,14.4,flags,R001,Credit score below policy,0.18
+0,APPROVE,0,18.0,14.4,flags,R006,Debt-to-Income (DTI) too high / affordability,0.18
 1,REJECT,1,40.0,32.0,flags,R001|R002,Credit score below policy|Limited/volatile credit history,0.4
-1,REJECT,1,40.0,32.0,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.4
+1,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,23.0,18.400000000000002,flags,,,0.23
 0,REJECT,1,30.0,26.0,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.3
 0,APPROVE,0,23.0,18.400000000000002,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.23
-0,APPROVE,0,23.0,18.400000000000002,flags,R001|R003,Credit score below policy|Revolving utilization too high / over-limit,0.23
+0,APPROVE,0,23.0,18.400000000000002,flags,R006,Debt-to-Income (DTI) too high / affordability,0.23
 0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
-0,APPROVE,0,18.0,14.4,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.18
-0,REJECT,1,30.0,24.0,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.3
-1,REJECT,1,40.0,32.0,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.4
+0,APPROVE,0,18.0,14.4,flags,R001,Credit score below policy,0.18
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+1,REJECT,1,40.0,32.0,flags,R001|R007|R003,Credit score below policy|Payment-to-Income (PTI) too high|Revolving utilization too high / over-limit,0.4
 0,APPROVE,0,13.0,10.4,flags,R006,Debt-to-Income (DTI) too high / affordability,0.13
+0,APPROVE,0,23.0,18.400000000000002,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.23
+1,REJECT,1,33.0,26.400000000000002,flags,R001|R006|R002,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Limited/volatile credit history,0.33
 0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
-1,REJECT,1,33.0,26.400000000000002,flags,R001|R007|R002,Credit score below policy|Payment-to-Income (PTI) too high|Limited/volatile credit history,0.33
-0,APPROVE,0,23.0,18.400000000000002,flags,,,0.23
 0,REJECT,1,30.0,24.0,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.3
-0,APPROVE,0,11.0,8.8,flags,R001,Credit score below policy,0.11
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,16.0,12.8,flags,R006,Debt-to-Income (DTI) too high / affordability,0.16
 0,APPROVE,0,7.0,5.6000000000000005,flags,,,0.07
 0,APPROVE,0,7.0,5.6000000000000005,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.07
-0,APPROVE,0,22.0,19.6,flags,R006|R007,Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.22
-0,REJECT,1,30.0,26.0,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.3
-1,REJECT,1,40.0,34.0,flags,R001|R006|R007,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.4
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+0,REJECT,1,30.0,26.0,flags,R006,Debt-to-Income (DTI) too high / affordability,0.3
+1,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,23.0,18.400000000000002,flags,R006,Debt-to-Income (DTI) too high / affordability,0.23
-1,REJECT,1,30.0,24.0,flags,R001,Credit score below policy,0.3
-0,APPROVE,0,23.0,18.400000000000002,flags,R007,Payment-to-Income (PTI) too high,0.23
+1,REJECT,1,30.0,24.0,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.3
+0,APPROVE,0,23.0,18.400000000000002,flags,,,0.23
 0,REJECT,1,40.0,32.0,flags,R001,Credit score below policy,0.4
-0,APPROVE,0,23.0,18.400000000000002,flags,R007|R002,Payment-to-Income (PTI) too high|Limited/volatile credit history,0.23
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,7.0,7.6000000000000005,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.07
-0,APPROVE,0,13.0,10.4,flags,,,0.13
+0,APPROVE,0,13.0,10.4,flags,R003,Revolving utilization too high / over-limit,0.13
 0,APPROVE,0,23.0,20.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.23
-0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
-0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
+0,APPROVE,0,23.0,18.400000000000002,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.23
+0,APPROVE,0,13.0,10.4,flags,R007,Payment-to-Income (PTI) too high,0.13
 0,APPROVE,0,23.0,18.400000000000002,flags,R001|R003,Credit score below policy|Revolving utilization too high / over-limit,0.23
-1,REJECT,1,38.0,30.400000000000002,flags,R001|R003,Credit score below policy|Revolving utilization too high / over-limit,0.38
+1,REJECT,1,38.0,30.400000000000002,flags,R001,Credit score below policy,0.38
 0,APPROVE,0,13.0,10.4,flags,,,0.13
-0,APPROVE,0,23.0,20.400000000000002,flags,R001|R006|R007,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.23
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 1,REJECT,1,40.0,32.0,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.4
-0,APPROVE,0,13.0,12.4,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.13
+0,APPROVE,0,13.0,12.4,flags,R006,Debt-to-Income (DTI) too high / affordability,0.13
 0,APPROVE,0,23.0,20.800000000000004,flags,R007,Payment-to-Income (PTI) too high,0.23
 0,APPROVE,0,22.0,17.6,flags,R001|R006|R007,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.22
-0,APPROVE,0,22.0,17.6,flags,,,0.22
-0,APPROVE,0,23.0,18.400000000000002,flags,,,0.23
-0,APPROVE,0,23.0,18.400000000000002,flags,R006,Debt-to-Income (DTI) too high / affordability,0.23
-0,APPROVE,0,7.0,5.6000000000000005,flags,R002,Limited/volatile credit history,0.07
+0,APPROVE,0,22.0,17.6,flags,R001,Credit score below policy,0.22
+0,APPROVE,0,23.0,18.400000000000002,flags,R007,Payment-to-Income (PTI) too high,0.23
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+0,APPROVE,0,7.0,5.6000000000000005,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.07
 1,REJECT,1,53.0,42.400000000000006,flags,R001|R006|R002,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Limited/volatile credit history,0.53
 0,APPROVE,0,23.0,20.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.23
-0,APPROVE,0,7.0,5.6000000000000005,flags,R001,Credit score below policy,0.07
-1,APPROVE,0,22.0,17.6,flags,,,0.22
-0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
-0,APPROVE,0,15.0,12.0,flags,R001,Credit score below policy,0.15
+0,APPROVE,0,7.0,5.6000000000000005,flags,,,0.07
+1,REJECT,1,,,policy,P001,Policy/eligibility,
+0,APPROVE,0,13.0,10.4,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.13
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
-0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
+0,APPROVE,0,23.0,18.400000000000002,flags,,,0.23
 0,APPROVE,0,18.0,14.4,flags,,,0.18
 0,APPROVE,0,23.0,20.400000000000002,flags,R006,Debt-to-Income (DTI) too high / affordability,0.23
 0,REJECT,1,33.0,26.400000000000002,flags,R001,Credit score below policy,0.33
-0,APPROVE,0,22.0,17.6,flags,R001,Credit score below policy,0.22
+0,APPROVE,0,22.0,17.6,flags,,,0.22
 0,APPROVE,0,23.0,18.400000000000002,flags,R002,Limited/volatile credit history,0.23
-0,APPROVE,0,22.0,19.6,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.22
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 1,REJECT,1,33.0,26.400000000000002,flags,,,0.33
 0,APPROVE,0,18.0,16.4,flags,R006,Debt-to-Income (DTI) too high / affordability,0.18
-1,REJECT,1,62.0,49.6,flags,R001|R006|R003,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Revolving utilization too high / over-limit,0.62
-0,APPROVE,0,16.0,12.8,flags,,,0.16
-1,REJECT,1,33.0,26.400000000000002,flags,R001,Credit score below policy,0.33
+1,REJECT,1,62.0,49.6,flags,R001|R006|R007,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.62
+0,APPROVE,0,16.0,12.8,flags,R007,Payment-to-Income (PTI) too high,0.16
+1,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,23.0,18.400000000000002,flags,R007,Payment-to-Income (PTI) too high,0.23
 0,APPROVE,0,23.0,20.400000000000002,flags,R006,Debt-to-Income (DTI) too high / affordability,0.23
 1,REJECT,1,40.0,32.0,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.4
 0,APPROVE,0,22.0,19.6,flags,R006,Debt-to-Income (DTI) too high / affordability,0.22
 1,APPROVE,0,11.0,8.8,flags,R001,Credit score below policy,0.11
-1,REJECT,1,39.0,31.200000000000003,flags,R007|R002,Payment-to-Income (PTI) too high|Limited/volatile credit history,0.39
+1,REJECT,1,39.0,31.200000000000003,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.39
 0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
-0,REJECT,1,30.0,24.0,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.3
+0,REJECT,1,30.0,24.0,flags,R006,Debt-to-Income (DTI) too high / affordability,0.3
 0,APPROVE,0,7.0,5.6000000000000005,flags,,,0.07
 0,REJECT,1,40.0,34.0,flags,R006,Debt-to-Income (DTI) too high / affordability,0.4
 0,APPROVE,0,0.0,0.0,flags,R002,Limited/volatile credit history,0.0
-1,REJECT,1,62.0,51.6,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.62
+1,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,13.0,10.4,flags,R007,Payment-to-Income (PTI) too high,0.13
 0,APPROVE,0,18.0,14.4,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.18
-0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
-0,REJECT,1,33.0,26.400000000000002,flags,R001|R003,Credit score below policy|Revolving utilization too high / over-limit,0.33
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+0,REJECT,1,33.0,26.400000000000002,flags,R003,Revolving utilization too high / over-limit,0.33
 1,REJECT,1,40.0,34.0,flags,R006|R007,Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.4
 0,APPROVE,0,22.0,17.6,flags,,,0.22
-0,REJECT,1,30.0,24.0,flags,,,0.3
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,22.0,19.6,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.22
 0,APPROVE,0,18.0,14.4,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.18
-0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
-1,REJECT,1,62.0,49.6,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.62
-0,APPROVE,0,22.0,17.6,flags,R001,Credit score below policy,0.22
-1,REJECT,1,30.0,24.0,flags,R002,Limited/volatile credit history,0.3
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+1,REJECT,1,,,policy,P001,Policy/eligibility,
+0,APPROVE,0,22.0,17.6,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.22
+1,REJECT,1,30.0,24.0,flags,R006,Debt-to-Income (DTI) too high / affordability,0.3
 1,REJECT,1,57.0,47.6,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.57
 0,REJECT,1,40.0,32.0,flags,R001,Credit score below policy,0.4
 1,REJECT,1,33.0,28.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.33
 0,REJECT,1,40.0,32.0,flags,R001|R007|R002,Credit score below policy|Payment-to-Income (PTI) too high|Limited/volatile credit history,0.4
 1,APPROVE,0,15.0,12.0,flags,R006,Debt-to-Income (DTI) too high / affordability,0.15
-0,REJECT,1,30.0,24.0,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.3
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,23.0,20.800000000000004,flags,R007,Payment-to-Income (PTI) too high,0.23
 0,APPROVE,0,7.0,5.6000000000000005,flags,R001,Credit score below policy,0.07
 1,REJECT,1,62.0,51.6,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.62
-0,APPROVE,0,19.0,15.200000000000001,flags,R006,Debt-to-Income (DTI) too high / affordability,0.19
-0,REJECT,1,33.0,28.400000000000002,flags,R006,Debt-to-Income (DTI) too high / affordability,0.33
-1,REJECT,1,40.0,34.0,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.4
-0,REJECT,1,33.0,26.400000000000002,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.33
+0,APPROVE,0,19.0,15.200000000000001,flags,R001,Credit score below policy,0.19
 0,REJECT,1,33.0,28.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.33
-0,APPROVE,0,22.0,17.6,flags,R007,Payment-to-Income (PTI) too high,0.22
-0,APPROVE,0,13.0,10.4,flags,,,0.13
-0,APPROVE,0,7.0,7.6000000000000005,flags,R006,Debt-to-Income (DTI) too high / affordability,0.07
+1,REJECT,1,40.0,34.0,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.4
+0,REJECT,1,33.0,26.400000000000002,flags,R001,Credit score below policy,0.33
+0,REJECT,1,33.0,28.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.33
+0,APPROVE,0,22.0,17.6,flags,R003,Revolving utilization too high / over-limit,0.22
+0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
+0,APPROVE,0,7.0,7.6000000000000005,flags,R001|R006|R007,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.07
 0,REJECT,1,30.0,24.0,flags,R001,Credit score below policy,0.3
 0,APPROVE,0,11.0,8.8,flags,R001,Credit score below policy,0.11
-0,REJECT,1,40.0,32.0,flags,R001,Credit score below policy,0.4
-1,REJECT,1,62.0,49.6,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.62
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+1,REJECT,1,62.0,49.6,flags,R001|R006|R007,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.62
 1,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
 0,APPROVE,0,13.0,10.4,flags,R007,Payment-to-Income (PTI) too high,0.13
-0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
-0,APPROVE,0,13.0,10.4,flags,R007,Payment-to-Income (PTI) too high,0.13
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,REJECT,1,40.0,34.0,flags,R006|R007,Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.4
 0,APPROVE,0,23.0,18.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.23
 0,APPROVE,0,22.0,17.6,flags,R007,Payment-to-Income (PTI) too high,0.22
-0,APPROVE,0,18.0,14.4,flags,R003,Revolving utilization too high / over-limit,0.18
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,REJECT,1,33.0,26.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.33
 0,REJECT,1,40.0,34.0,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.4
-1,REJECT,1,33.0,26.400000000000002,flags,R007,Payment-to-Income (PTI) too high,0.33
+1,REJECT,1,33.0,26.400000000000002,flags,R006|R007,Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.33
 1,REJECT,1,40.0,32.0,flags,R007|R002,Payment-to-Income (PTI) too high|Limited/volatile credit history,0.4
-0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
+0,APPROVE,0,13.0,10.4,flags,,,0.13
 0,APPROVE,0,11.0,8.8,flags,R001,Credit score below policy,0.11
 0,APPROVE,0,23.0,20.400000000000002,flags,R006|R007,Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.23
 0,APPROVE,0,18.0,14.4,flags,,,0.18
-1,REJECT,1,40.0,32.0,flags,R001,Credit score below policy,0.4
+1,REJECT,1,40.0,32.0,flags,,,0.4
 0,REJECT,1,40.0,32.0,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.4
-1,REJECT,1,30.0,24.0,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.3
-0,APPROVE,0,23.0,18.400000000000002,flags,R001|R002,Credit score below policy|Limited/volatile credit history,0.23
+1,REJECT,1,30.0,24.0,flags,R001,Credit score below policy,0.3
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
 0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
-1,APPROVE,0,13.0,10.4,flags,,,0.13
-0,APPROVE,0,15.0,12.0,flags,,,0.15
+1,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
+0,APPROVE,0,15.0,12.0,flags,R003,Revolving utilization too high / over-limit,0.15
 0,APPROVE,0,16.0,12.8,flags,,,0.16
-0,APPROVE,0,18.0,14.4,flags,R001,Credit score below policy,0.18
-0,APPROVE,0,22.0,17.6,flags,R001,Credit score below policy,0.22
+0,APPROVE,0,18.0,14.4,flags,,,0.18
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,13.0,12.4,flags,R006,Debt-to-Income (DTI) too high / affordability,0.13
-1,APPROVE,0,18.0,14.4,flags,,,0.18
+1,APPROVE,0,18.0,14.4,flags,R003,Revolving utilization too high / over-limit,0.18
 0,APPROVE,0,18.0,14.4,flags,R001,Credit score below policy,0.18
 0,REJECT,1,30.0,24.0,flags,R001,Credit score below policy,0.3
-1,REJECT,1,62.0,51.6,flags,R001|R006|R007,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.62
+1,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,11.0,10.8,flags,R006,Debt-to-Income (DTI) too high / affordability,0.11
 0,APPROVE,0,18.0,14.4,flags,R001|R003,Credit score below policy|Revolving utilization too high / over-limit,0.18
 0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
-0,APPROVE,0,13.0,10.4,flags,R001|R003,Credit score below policy|Revolving utilization too high / over-limit,0.13
-0,APPROVE,0,13.0,10.4,flags,,,0.13
-0,APPROVE,0,18.0,14.4,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.18
-0,REJECT,1,33.0,26.400000000000002,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.33
-1,APPROVE,0,23.0,18.400000000000002,flags,,,0.23
-1,REJECT,1,40.0,32.0,flags,R001,Credit score below policy,0.4
 0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+0,APPROVE,0,18.0,14.4,flags,R001,Credit score below policy,0.18
+0,REJECT,1,33.0,26.400000000000002,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.33
+1,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
+1,REJECT,1,,,policy,P001,Policy/eligibility,
+0,APPROVE,0,13.0,10.4,flags,R001|R003,Credit score below policy|Revolving utilization too high / over-limit,0.13
 0,APPROVE,0,23.0,18.400000000000002,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.23
-0,APPROVE,0,18.0,14.4,flags,,,0.18
+0,APPROVE,0,18.0,14.4,flags,R001,Credit score below policy,0.18
 1,APPROVE,0,23.0,18.400000000000002,flags,,,0.23
-0,APPROVE,0,23.0,20.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.23
+0,APPROVE,0,23.0,20.400000000000002,flags,R006,Debt-to-Income (DTI) too high / affordability,0.23
 0,APPROVE,0,13.0,12.4,flags,R006,Debt-to-Income (DTI) too high / affordability,0.13
 0,APPROVE,0,23.0,18.400000000000002,flags,,,0.23
 0,APPROVE,0,22.0,19.6,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.22
 0,APPROVE,0,13.0,10.4,flags,R006,Debt-to-Income (DTI) too high / affordability,0.13
-0,APPROVE,0,7.0,5.6000000000000005,flags,R001,Credit score below policy,0.07
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,23.0,20.400000000000002,flags,R006|R002,Debt-to-Income (DTI) too high / affordability|Limited/volatile credit history,0.23
-0,APPROVE,0,19.0,15.200000000000001,flags,,,0.19
+0,APPROVE,0,19.0,15.200000000000001,flags,R001,Credit score below policy,0.19
 0,APPROVE,0,23.0,18.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.23
 0,APPROVE,0,22.0,17.6,flags,R001,Credit score below policy,0.22
 1,REJECT,1,62.0,51.6,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.62
 0,APPROVE,0,23.0,18.400000000000002,flags,,,0.23
-0,APPROVE,0,13.0,10.4,flags,,,0.13
+0,APPROVE,0,13.0,10.4,flags,R006,Debt-to-Income (DTI) too high / affordability,0.13
 1,REJECT,1,33.0,26.400000000000002,flags,R007,Payment-to-Income (PTI) too high,0.33
-1,APPROVE,0,18.0,14.4,flags,R006,Debt-to-Income (DTI) too high / affordability,0.18
+1,APPROVE,0,18.0,14.4,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.18
 0,APPROVE,0,22.0,17.6,flags,,,0.22
 0,REJECT,1,39.0,31.200000000000003,flags,R006,Debt-to-Income (DTI) too high / affordability,0.39
 0,APPROVE,0,18.0,16.4,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.18
@@ -552,22 +552,22 @@ true_label,decision,pred_label,risk_score,final_score,basis,codes,labels,pd_hat
 0,APPROVE,0,13.0,12.4,flags,R006,Debt-to-Income (DTI) too high / affordability,0.13
 0,APPROVE,0,13.0,10.4,flags,,,0.13
 0,APPROVE,0,13.0,10.4,flags,R007,Payment-to-Income (PTI) too high,0.13
-1,REJECT,1,30.0,24.0,flags,R001|R007|R003,Credit score below policy|Payment-to-Income (PTI) too high|Revolving utilization too high / over-limit,0.3
+1,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,22.0,17.6,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.22
 0,APPROVE,0,23.0,20.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.23
-0,APPROVE,0,23.0,18.400000000000002,flags,R006,Debt-to-Income (DTI) too high / affordability,0.23
+0,APPROVE,0,23.0,18.400000000000002,flags,R003,Revolving utilization too high / over-limit,0.23
 0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
 0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
-0,APPROVE,0,16.0,12.8,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.16
+0,APPROVE,0,16.0,12.8,flags,R007,Payment-to-Income (PTI) too high,0.16
 0,APPROVE,0,23.0,18.400000000000002,flags,R007|R002,Payment-to-Income (PTI) too high|Limited/volatile credit history,0.23
 0,APPROVE,0,11.0,8.8,flags,R001,Credit score below policy,0.11
 0,APPROVE,0,11.0,8.8,flags,R001|R002,Credit score below policy|Limited/volatile credit history,0.11
-0,APPROVE,0,7.0,5.6000000000000005,flags,,,0.07
-0,APPROVE,0,16.0,12.8,flags,R007,Payment-to-Income (PTI) too high,0.16
-0,APPROVE,0,7.0,5.6000000000000005,flags,,,0.07
-0,APPROVE,0,16.0,12.8,flags,R002,Limited/volatile credit history,0.16
 0,APPROVE,0,7.0,5.6000000000000005,flags,R001,Credit score below policy,0.07
-0,APPROVE,0,13.0,10.4,flags,,,0.13
+0,APPROVE,0,16.0,12.8,flags,R001,Credit score below policy,0.16
+0,APPROVE,0,7.0,5.6000000000000005,flags,R001,Credit score below policy,0.07
+0,APPROVE,0,16.0,12.8,flags,,,0.16
+0,APPROVE,0,7.0,5.6000000000000005,flags,R001,Credit score below policy,0.07
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
 0,REJECT,1,33.0,26.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.33
 1,REJECT,1,40.0,32.0,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.4
@@ -575,31 +575,31 @@ true_label,decision,pred_label,risk_score,final_score,basis,codes,labels,pd_hat
 0,APPROVE,0,23.0,18.400000000000002,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.23
 0,REJECT,1,33.0,26.400000000000002,flags,R002,Limited/volatile credit history,0.33
 0,APPROVE,0,7.0,7.6000000000000005,flags,R006|R007,Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.07
-0,APPROVE,0,13.0,10.4,flags,,,0.13
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,18.0,14.4,flags,R003,Revolving utilization too high / over-limit,0.18
-0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
-0,APPROVE,0,23.0,18.400000000000002,flags,,,0.23
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+0,APPROVE,0,23.0,18.400000000000002,flags,R006,Debt-to-Income (DTI) too high / affordability,0.23
 0,APPROVE,0,23.0,18.400000000000002,flags,,,0.23
 1,APPROVE,0,22.0,17.6,flags,R002,Limited/volatile credit history,0.22
 0,REJECT,1,57.0,47.6,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.57
 1,REJECT,1,33.0,26.400000000000002,flags,R006|R007|R003,Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high|Revolving utilization too high / over-limit,0.33
-0,REJECT,1,23.0,25.6,flags,R006|R007,Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.23
-0,APPROVE,0,18.0,14.4,flags,,,0.18
-0,APPROVE,0,13.0,12.4,flags,R006,Debt-to-Income (DTI) too high / affordability,0.13
-0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
-0,REJECT,1,30.0,24.0,flags,R001|R002,Credit score below policy|Limited/volatile credit history,0.3
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+0,APPROVE,0,13.0,12.4,flags,R006|R007,Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.13
+0,APPROVE,0,23.0,18.400000000000002,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.23
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
 0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
-0,APPROVE,0,13.0,10.4,flags,,,0.13
-1,APPROVE,0,22.0,17.6,flags,R001,Credit score below policy,0.22
-0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
+0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
+1,APPROVE,0,22.0,17.6,flags,,,0.22
+0,APPROVE,0,23.0,18.400000000000002,flags,,,0.23
 1,REJECT,1,62.0,49.6,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.62
-0,REJECT,1,30.0,24.0,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.3
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,18.0,14.4,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.18
-0,APPROVE,0,7.0,5.6000000000000005,flags,,,0.07
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 1,APPROVE,0,13.0,10.4,flags,,,0.13
 0,REJECT,1,39.0,31.200000000000003,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.39
-0,REJECT,1,40.0,34.0,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.4
+0,REJECT,1,40.0,34.0,flags,R006,Debt-to-Income (DTI) too high / affordability,0.4
 0,APPROVE,0,13.0,10.4,flags,,,0.13
 0,APPROVE,0,22.0,17.6,flags,R001|R006|R003,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Revolving utilization too high / over-limit,0.22
 0,APPROVE,0,16.0,12.8,flags,R006,Debt-to-Income (DTI) too high / affordability,0.16
@@ -609,209 +609,209 @@ true_label,decision,pred_label,risk_score,final_score,basis,codes,labels,pd_hat
 0,APPROVE,0,22.0,17.6,flags,R001,Credit score below policy,0.22
 0,APPROVE,0,13.0,10.4,flags,R006|R002,Debt-to-Income (DTI) too high / affordability|Limited/volatile credit history,0.13
 0,REJECT,1,33.0,26.400000000000002,flags,R001,Credit score below policy,0.33
-0,REJECT,1,30.0,26.0,flags,R006,Debt-to-Income (DTI) too high / affordability,0.3
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,15.0,12.0,flags,,,0.15
 0,APPROVE,0,7.0,5.6000000000000005,flags,R007,Payment-to-Income (PTI) too high,0.07
-1,REJECT,1,30.0,24.0,flags,R001|R007|R002,Credit score below policy|Payment-to-Income (PTI) too high|Limited/volatile credit history,0.3
+1,REJECT,1,30.0,24.0,flags,R001|R006|R007,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.3
 1,REJECT,1,40.0,32.0,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.4
 0,APPROVE,0,13.0,10.4,flags,,,0.13
 0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
 0,APPROVE,0,23.0,18.400000000000002,flags,,,0.23
 0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
 0,APPROVE,0,7.0,5.6000000000000005,flags,R001,Credit score below policy,0.07
-0,APPROVE,0,18.0,14.4,flags,R001,Credit score below policy,0.18
-0,APPROVE,0,22.0,19.6,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.22
+0,APPROVE,0,18.0,14.4,flags,,,0.18
+0,APPROVE,0,22.0,19.6,flags,R006,Debt-to-Income (DTI) too high / affordability,0.22
 1,APPROVE,0,23.0,20.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.23
 1,REJECT,1,33.0,26.400000000000002,flags,R006|R007,Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.33
 1,REJECT,1,53.0,42.400000000000006,flags,R001|R003,Credit score below policy|Revolving utilization too high / over-limit,0.53
 0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
 0,APPROVE,0,18.0,14.4,flags,R006,Debt-to-Income (DTI) too high / affordability,0.18
-0,APPROVE,0,23.0,18.400000000000002,flags,R006|R007|R003,Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high|Revolving utilization too high / over-limit,0.23
-1,REJECT,1,40.0,36.4,flags,R001|R006|R003,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Revolving utilization too high / over-limit,0.4
-0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
+0,APPROVE,0,23.0,18.400000000000002,flags,R001|R006|R003,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Revolving utilization too high / over-limit,0.23
+1,REJECT,1,,,policy,P001,Policy/eligibility,
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,18.0,16.4,flags,R006,Debt-to-Income (DTI) too high / affordability,0.18
 0,APPROVE,0,23.0,18.400000000000002,flags,,,0.23
 0,REJECT,1,33.0,28.400000000000002,flags,R006,Debt-to-Income (DTI) too high / affordability,0.33
 0,APPROVE,0,22.0,17.6,flags,R001,Credit score below policy,0.22
+0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
 0,APPROVE,0,13.0,10.4,flags,,,0.13
 0,APPROVE,0,13.0,10.4,flags,,,0.13
-0,APPROVE,0,13.0,10.4,flags,,,0.13
-0,APPROVE,0,16.0,12.8,flags,,,0.16
-0,APPROVE,0,23.0,18.400000000000002,flags,R001|R007|R003,Credit score below policy|Payment-to-Income (PTI) too high|Revolving utilization too high / over-limit,0.23
+0,APPROVE,0,16.0,12.8,flags,R001,Credit score below policy,0.16
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 1,REJECT,1,57.0,45.6,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.57
 0,APPROVE,0,13.0,10.4,flags,R006,Debt-to-Income (DTI) too high / affordability,0.13
-0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
+0,APPROVE,0,23.0,18.400000000000002,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.23
 0,APPROVE,0,7.0,5.6000000000000005,flags,R001,Credit score below policy,0.07
 0,APPROVE,0,23.0,18.400000000000002,flags,,,0.23
 1,APPROVE,0,23.0,18.400000000000002,flags,R002,Limited/volatile credit history,0.23
-0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,13.0,10.4,flags,,,0.13
 0,APPROVE,0,7.0,5.6000000000000005,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.07
-1,APPROVE,0,22.0,17.6,flags,R006,Debt-to-Income (DTI) too high / affordability,0.22
+1,APPROVE,0,22.0,17.6,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.22
 0,APPROVE,0,13.0,12.4,flags,R006,Debt-to-Income (DTI) too high / affordability,0.13
 0,APPROVE,0,16.0,12.8,flags,R001,Credit score below policy,0.16
 0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
-0,REJECT,1,42.0,35.6,flags,R001|R006|R002,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Limited/volatile credit history,0.42
+0,REJECT,1,42.0,35.6,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.42
 0,APPROVE,0,22.0,17.6,flags,R001,Credit score below policy,0.22
 0,APPROVE,0,11.0,10.8,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.11
-0,APPROVE,0,16.0,14.8,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.16
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,22.0,17.6,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.22
 0,APPROVE,0,13.0,10.4,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.13
 0,APPROVE,0,13.0,10.4,flags,,,0.13
 0,APPROVE,0,13.0,12.4,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.13
-1,REJECT,1,62.0,51.6,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.62
+1,REJECT,1,62.0,51.6,flags,R001|R006|R007,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.62
 1,REJECT,1,39.0,31.200000000000003,flags,R001,Credit score below policy,0.39
 0,APPROVE,0,13.0,12.4,flags,R001|R006|R007,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.13
-0,APPROVE,0,13.0,10.4,flags,,,0.13
-0,APPROVE,0,22.0,17.6,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.22
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+0,APPROVE,0,22.0,17.6,flags,R006|R007,Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.22
 0,REJECT,1,30.0,26.0,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.3
-0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
-0,REJECT,1,33.0,26.400000000000002,flags,,,0.33
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+0,REJECT,1,33.0,26.400000000000002,flags,R001,Credit score below policy,0.33
 0,APPROVE,0,18.0,14.4,flags,,,0.18
-0,APPROVE,0,18.0,16.4,flags,R006,Debt-to-Income (DTI) too high / affordability,0.18
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,13.0,12.4,flags,R006,Debt-to-Income (DTI) too high / affordability,0.13
-0,APPROVE,0,23.0,18.400000000000002,flags,,,0.23
-1,APPROVE,0,23.0,18.400000000000002,flags,R002,Limited/volatile credit history,0.23
+0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
+1,REJECT,1,,,policy,P001,Policy/eligibility,
 1,REJECT,1,57.0,45.6,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.57
 0,REJECT,1,40.0,34.0,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.4
 0,APPROVE,0,13.0,10.4,flags,R006,Debt-to-Income (DTI) too high / affordability,0.13
-0,APPROVE,0,23.0,18.400000000000002,flags,,,0.23
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,13.0,10.4,flags,,,0.13
-0,APPROVE,0,18.0,14.4,flags,R002,Limited/volatile credit history,0.18
+0,APPROVE,0,18.0,14.4,flags,,,0.18
 0,APPROVE,0,23.0,20.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.23
-0,APPROVE,0,23.0,20.400000000000002,flags,R006,Debt-to-Income (DTI) too high / affordability,0.23
+0,APPROVE,0,23.0,20.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.23
 1,APPROVE,0,22.0,17.6,flags,R001|R003,Credit score below policy|Revolving utilization too high / over-limit,0.22
 1,APPROVE,0,23.0,18.400000000000002,flags,R006|R002,Debt-to-Income (DTI) too high / affordability|Limited/volatile credit history,0.23
 0,APPROVE,0,23.0,20.400000000000002,flags,R006,Debt-to-Income (DTI) too high / affordability,0.23
-0,APPROVE,0,7.0,5.6000000000000005,flags,R003,Revolving utilization too high / over-limit,0.07
+0,APPROVE,0,7.0,5.6000000000000005,flags,R002,Limited/volatile credit history,0.07
 0,APPROVE,0,16.0,12.8,flags,,,0.16
-0,APPROVE,0,13.0,12.4,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.13
-0,APPROVE,0,23.0,18.400000000000002,flags,,,0.23
-0,APPROVE,0,23.0,18.400000000000002,flags,,,0.23
+0,APPROVE,0,13.0,12.4,flags,R001|R006|R007,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.13
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,22.0,17.6,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.22
 0,APPROVE,0,13.0,10.4,flags,,,0.13
-0,APPROVE,0,18.0,14.4,flags,,,0.18
-1,REJECT,1,33.0,26.400000000000002,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.33
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+1,REJECT,1,33.0,26.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.33
 1,APPROVE,0,18.0,14.4,flags,,,0.18
 1,REJECT,1,62.0,49.6,flags,R001,Credit score below policy,0.62
-1,REJECT,1,62.0,49.6,flags,R001|R006|R007,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.62
+1,REJECT,1,62.0,49.6,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.62
 0,APPROVE,0,0.0,0.0,flags,,,0.0
 0,REJECT,1,62.0,51.6,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.62
-0,APPROVE,0,11.0,8.8,flags,R001|R002,Credit score below policy|Limited/volatile credit history,0.11
+0,APPROVE,0,11.0,8.8,flags,R001,Credit score below policy,0.11
 1,REJECT,1,42.0,33.6,flags,R006,Debt-to-Income (DTI) too high / affordability,0.42
 0,APPROVE,0,16.0,12.8,flags,,,0.16
 0,APPROVE,0,18.0,14.4,flags,,,0.18
-0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,22.0,17.6,flags,R001,Credit score below policy,0.22
 0,REJECT,1,62.0,51.6,flags,R001|R006|R003,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Revolving utilization too high / over-limit,0.62
 0,APPROVE,0,22.0,19.6,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.22
 0,REJECT,1,30.0,24.0,flags,R001,Credit score below policy,0.3
-0,APPROVE,0,22.0,17.6,flags,,,0.22
+0,APPROVE,0,22.0,17.6,flags,R003,Revolving utilization too high / over-limit,0.22
 1,REJECT,1,33.0,26.400000000000002,flags,R001,Credit score below policy,0.33
 0,APPROVE,0,12.0,9.600000000000001,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.12
-1,REJECT,1,33.0,26.400000000000002,flags,R001,Credit score below policy,0.33
+1,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,18.0,14.4,flags,,,0.18
-0,REJECT,1,39.0,31.200000000000003,flags,R001|R006|R002,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Limited/volatile credit history,0.39
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,15.0,14.0,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.15
-0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
-0,APPROVE,0,13.0,12.4,flags,R001|R006|R003,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Revolving utilization too high / over-limit,0.13
-1,REJECT,1,57.0,47.6,flags,R001|R006|R007,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.57
-0,APPROVE,0,18.0,14.4,flags,R002,Limited/volatile credit history,0.18
+0,APPROVE,0,13.0,10.4,flags,R001|R002,Credit score below policy|Limited/volatile credit history,0.13
+0,APPROVE,0,13.0,12.4,flags,R006|R003,Debt-to-Income (DTI) too high / affordability|Revolving utilization too high / over-limit,0.13
+1,REJECT,1,,,policy,P001,Policy/eligibility,
+0,APPROVE,0,18.0,14.4,flags,,,0.18
 0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
 0,REJECT,1,30.0,24.0,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.3
 0,APPROVE,0,22.0,17.6,flags,R001,Credit score below policy,0.22
-0,REJECT,1,30.0,24.0,flags,R001|R002,Credit score below policy|Limited/volatile credit history,0.3
-0,APPROVE,0,0.0,0.0,flags,,,0.0
-0,APPROVE,0,18.0,14.4,flags,R003,Revolving utilization too high / over-limit,0.18
+0,REJECT,1,30.0,24.0,flags,R001|R006|R007,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.3
+0,APPROVE,0,0.0,0.0,flags,R002,Limited/volatile credit history,0.0
+0,APPROVE,0,18.0,14.4,flags,R001|R003,Credit score below policy|Revolving utilization too high / over-limit,0.18
 0,APPROVE,0,13.0,12.4,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.13
-1,REJECT,1,57.0,45.6,flags,R001,Credit score below policy,0.57
-0,APPROVE,0,22.0,17.6,flags,,,0.22
+1,REJECT,1,,,policy,P001,Policy/eligibility,
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,REJECT,1,33.0,26.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.33
 0,APPROVE,0,13.0,10.4,flags,,,0.13
 1,APPROVE,0,22.0,17.6,flags,,,0.22
-1,REJECT,1,30.0,26.0,flags,R006|R002,Debt-to-Income (DTI) too high / affordability|Limited/volatile credit history,0.3
+1,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,22.0,17.6,flags,R001,Credit score below policy,0.22
-0,APPROVE,0,23.0,20.400000000000002,flags,R006,Debt-to-Income (DTI) too high / affordability,0.23
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,7.0,5.6000000000000005,flags,R001,Credit score below policy,0.07
-0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
-0,REJECT,1,30.0,26.0,flags,R006|R007,Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.3
-0,APPROVE,0,13.0,10.4,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.13
+0,APPROVE,0,23.0,18.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.23
+0,REJECT,1,30.0,26.0,flags,R001|R006|R007,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.3
+0,APPROVE,0,13.0,10.4,flags,R007,Payment-to-Income (PTI) too high,0.13
 0,REJECT,1,33.0,26.400000000000002,flags,R001|R002,Credit score below policy|Limited/volatile credit history,0.33
-0,APPROVE,0,23.0,18.400000000000002,flags,,,0.23
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,7.0,5.6000000000000005,flags,R007|R002,Payment-to-Income (PTI) too high|Limited/volatile credit history,0.07
-0,APPROVE,0,15.0,14.0,flags,R006|R007,Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.15
+0,APPROVE,0,15.0,14.0,flags,R006,Debt-to-Income (DTI) too high / affordability,0.15
 0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
 0,APPROVE,0,18.0,14.4,flags,R001,Credit score below policy,0.18
 0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
 0,REJECT,1,30.0,26.0,flags,R006,Debt-to-Income (DTI) too high / affordability,0.3
 1,REJECT,1,57.0,47.6,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.57
-0,REJECT,1,30.0,24.0,flags,R007,Payment-to-Income (PTI) too high,0.3
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
-0,REJECT,1,30.0,26.4,flags,R001|R006|R003,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Revolving utilization too high / over-limit,0.3
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,13.0,10.4,flags,,,0.13
-0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
-0,REJECT,1,30.0,26.0,flags,R006|R007,Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.3
-0,APPROVE,0,23.0,18.400000000000002,flags,R002,Limited/volatile credit history,0.23
+0,APPROVE,0,23.0,18.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.23
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+0,APPROVE,0,23.0,18.400000000000002,flags,,,0.23
 0,APPROVE,0,16.0,12.8,flags,,,0.16
-0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
+0,APPROVE,0,13.0,10.4,flags,,,0.13
 0,REJECT,1,30.0,24.0,flags,R001,Credit score below policy,0.3
 0,APPROVE,0,23.0,20.400000000000002,flags,R006,Debt-to-Income (DTI) too high / affordability,0.23
-1,REJECT,1,33.0,26.400000000000002,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.33
+1,REJECT,1,33.0,26.400000000000002,flags,R001,Credit score below policy,0.33
 1,REJECT,1,62.0,49.6,flags,R001|R006|R002,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Limited/volatile credit history,0.62
-0,APPROVE,0,22.0,17.6,flags,R001,Credit score below policy,0.22
+0,APPROVE,0,22.0,17.6,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.22
 0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
 0,APPROVE,0,23.0,18.400000000000002,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.23
-0,APPROVE,0,22.0,17.6,flags,R001|R007|R003,Credit score below policy|Payment-to-Income (PTI) too high|Revolving utilization too high / over-limit,0.22
+0,APPROVE,0,22.0,17.6,flags,R001|R003,Credit score below policy|Revolving utilization too high / over-limit,0.22
 0,REJECT,1,33.0,28.400000000000002,flags,R006|R007,Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.33
-0,APPROVE,0,13.0,10.4,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.13
-0,REJECT,1,33.0,26.400000000000002,flags,R001,Credit score below policy,0.33
-0,REJECT,1,33.0,28.400000000000002,flags,R006,Debt-to-Income (DTI) too high / affordability,0.33
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+0,REJECT,1,33.0,26.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.33
+0,REJECT,1,33.0,28.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.33
 0,APPROVE,0,18.0,14.4,flags,R001,Credit score below policy,0.18
 0,APPROVE,0,16.0,12.8,flags,R001,Credit score below policy,0.16
 0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
 0,APPROVE,0,16.0,14.8,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.16
-0,APPROVE,0,13.0,10.4,flags,R006,Debt-to-Income (DTI) too high / affordability,0.13
+0,APPROVE,0,13.0,10.4,flags,,,0.13
 0,APPROVE,0,13.0,10.4,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.13
 0,REJECT,1,33.0,26.400000000000002,flags,R001,Credit score below policy,0.33
 0,APPROVE,0,13.0,10.4,flags,,,0.13
-0,APPROVE,0,13.0,10.4,flags,,,0.13
+0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
 0,APPROVE,0,0.0,0.0,flags,,,0.0
-0,APPROVE,0,7.0,5.6000000000000005,flags,,,0.07
-0,APPROVE,0,23.0,18.400000000000002,flags,R001|R007|R003,Credit score below policy|Payment-to-Income (PTI) too high|Revolving utilization too high / over-limit,0.23
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+0,APPROVE,0,23.0,18.400000000000002,flags,R001|R007|R002,Credit score below policy|Payment-to-Income (PTI) too high|Limited/volatile credit history,0.23
 0,REJECT,1,53.0,44.400000000000006,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.53
-1,REJECT,1,40.0,34.0,flags,R001|R006|R007,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.4
+1,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,18.0,14.4,flags,,,0.18
-1,APPROVE,0,23.0,18.400000000000002,flags,R002,Limited/volatile credit history,0.23
-0,APPROVE,0,23.0,20.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.23
+1,APPROVE,0,23.0,18.400000000000002,flags,R003,Revolving utilization too high / over-limit,0.23
+0,APPROVE,0,23.0,20.400000000000002,flags,R006|R007,Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.23
 0,APPROVE,0,11.0,8.8,flags,R001,Credit score below policy,0.11
 0,APPROVE,0,13.0,10.4,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.13
-0,APPROVE,0,21.0,18.8,flags,R001|R006|R007,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.21
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 1,REJECT,1,40.0,34.0,flags,R001|R006|R007,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.4
 0,APPROVE,0,16.0,14.8,flags,R006,Debt-to-Income (DTI) too high / affordability,0.16
 0,APPROVE,0,23.0,20.400000000000002,flags,R006,Debt-to-Income (DTI) too high / affordability,0.23
-0,APPROVE,0,22.0,17.6,flags,,,0.22
-0,APPROVE,0,23.0,20.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.23
-0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
-0,APPROVE,0,23.0,18.400000000000002,flags,R001|R003,Credit score below policy|Revolving utilization too high / over-limit,0.23
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+0,APPROVE,0,13.0,10.4,flags,R006,Debt-to-Income (DTI) too high / affordability,0.13
+0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
 0,REJECT,1,33.0,26.400000000000002,flags,R001,Credit score below policy,0.33
-0,APPROVE,0,23.0,20.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.23
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 1,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
 0,APPROVE,0,23.0,20.400000000000002,flags,R006,Debt-to-Income (DTI) too high / affordability,0.23
 0,APPROVE,0,23.0,18.400000000000002,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.23
 1,REJECT,1,40.0,34.0,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.4
 0,APPROVE,0,22.0,17.6,flags,R003,Revolving utilization too high / over-limit,0.22
-1,REJECT,1,53.0,44.400000000000006,flags,R001|R006|R003,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Revolving utilization too high / over-limit,0.53
+1,REJECT,1,53.0,44.400000000000006,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.53
 0,REJECT,1,33.0,28.400000000000002,flags,R006,Debt-to-Income (DTI) too high / affordability,0.33
 0,APPROVE,0,7.0,5.6000000000000005,flags,R007,Payment-to-Income (PTI) too high,0.07
-0,APPROVE,0,0.0,0.0,flags,,,0.0
-0,APPROVE,0,13.0,10.4,flags,,,0.13
+0,APPROVE,0,0.0,0.0,flags,R006,Debt-to-Income (DTI) too high / affordability,0.0
+0,APPROVE,0,13.0,10.4,flags,R002,Limited/volatile credit history,0.13
 0,APPROVE,0,23.0,20.400000000000002,flags,R001|R006|R007,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.23
 1,REJECT,1,40.0,32.0,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.4
 0,APPROVE,0,0.0,0.0,flags,,,0.0
 0,APPROVE,0,23.0,20.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.23
 0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
 0,APPROVE,0,22.0,17.6,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.22
-0,APPROVE,0,13.0,10.4,flags,,,0.13
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,REJECT,1,33.0,28.400000000000002,flags,R006|R003,Debt-to-Income (DTI) too high / affordability|Revolving utilization too high / over-limit,0.33
 0,APPROVE,0,23.0,20.400000000000002,flags,R006,Debt-to-Income (DTI) too high / affordability,0.23
 1,REJECT,1,40.0,32.0,flags,R001|R002,Credit score below policy|Limited/volatile credit history,0.4
@@ -820,134 +820,134 @@ true_label,decision,pred_label,risk_score,final_score,basis,codes,labels,pd_hat
 0,APPROVE,0,7.0,5.6000000000000005,flags,R006|R002,Debt-to-Income (DTI) too high / affordability|Limited/volatile credit history,0.07
 0,APPROVE,0,0.0,0.0,flags,,,0.0
 0,APPROVE,0,13.0,10.4,flags,R007,Payment-to-Income (PTI) too high,0.13
-1,REJECT,1,40.0,32.0,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.4
+1,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,16.0,12.8,flags,R001,Credit score below policy,0.16
 1,REJECT,1,62.0,49.6,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.62
 0,APPROVE,0,13.0,10.4,flags,,,0.13
 0,APPROVE,0,7.0,5.6000000000000005,flags,,,0.07
 0,APPROVE,0,23.0,18.400000000000002,flags,R003,Revolving utilization too high / over-limit,0.23
-0,APPROVE,0,13.0,10.4,flags,R007,Payment-to-Income (PTI) too high,0.13
+0,APPROVE,0,13.0,10.4,flags,,,0.13
 0,APPROVE,0,23.0,18.400000000000002,flags,R001|R003,Credit score below policy|Revolving utilization too high / over-limit,0.23
 0,APPROVE,0,23.0,18.400000000000002,flags,R007,Payment-to-Income (PTI) too high,0.23
-0,APPROVE,0,23.0,20.400000000000002,flags,R006,Debt-to-Income (DTI) too high / affordability,0.23
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,15.0,14.0,flags,R006,Debt-to-Income (DTI) too high / affordability,0.15
-0,APPROVE,0,7.0,5.6000000000000005,flags,,,0.07
-0,APPROVE,0,18.0,14.4,flags,,,0.18
-0,APPROVE,0,7.0,5.6000000000000005,flags,,,0.07
+0,APPROVE,0,7.0,5.6000000000000005,flags,R006,Debt-to-Income (DTI) too high / affordability,0.07
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,REJECT,1,33.0,28.400000000000002,flags,R001|R006|R007,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.33
-0,APPROVE,0,22.0,19.6,flags,R006,Debt-to-Income (DTI) too high / affordability,0.22
+0,APPROVE,0,22.0,19.6,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.22
 0,REJECT,1,40.0,34.0,flags,R001|R006|R003,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Revolving utilization too high / over-limit,0.4
-1,REJECT,1,33.0,28.400000000000002,flags,R001|R006|R007,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.33
-0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
+1,REJECT,1,33.0,28.400000000000002,flags,R006|R007,Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.33
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,7.0,5.6000000000000005,flags,R001,Credit score below policy,0.07
 0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
 0,APPROVE,0,16.0,12.8,flags,R007,Payment-to-Income (PTI) too high,0.16
 0,APPROVE,0,13.0,10.4,flags,R003,Revolving utilization too high / over-limit,0.13
-0,APPROVE,0,22.0,17.6,flags,R001,Credit score below policy,0.22
-0,APPROVE,0,13.0,10.4,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.13
-0,REJECT,1,30.0,24.0,flags,R006|R007,Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.3
-0,APPROVE,0,18.0,14.4,flags,R001,Credit score below policy,0.18
-0,APPROVE,0,0.0,0.0,flags,,,0.0
-1,APPROVE,0,16.0,14.8,flags,R006|R003,Debt-to-Income (DTI) too high / affordability|Revolving utilization too high / over-limit,0.16
-1,REJECT,1,40.0,34.0,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.4
-0,APPROVE,0,13.0,10.4,flags,,,0.13
+0,APPROVE,0,22.0,17.6,flags,,,0.22
 0,APPROVE,0,13.0,10.4,flags,R006,Debt-to-Income (DTI) too high / affordability,0.13
-0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
-1,REJECT,1,42.0,35.6,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.42
+0,REJECT,1,30.0,24.0,flags,R006|R007,Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.3
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+0,APPROVE,0,0.0,0.0,flags,,,0.0
+1,APPROVE,0,16.0,14.8,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.16
+1,REJECT,1,40.0,34.0,flags,R001|R006|R002,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Limited/volatile credit history,0.4
 0,APPROVE,0,13.0,10.4,flags,,,0.13
+0,APPROVE,0,13.0,10.4,flags,,,0.13
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+1,REJECT,1,42.0,35.6,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.42
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,7.0,5.6000000000000005,flags,R001,Credit score below policy,0.07
 0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
 1,REJECT,1,33.0,28.400000000000002,flags,R006|R002,Debt-to-Income (DTI) too high / affordability|Limited/volatile credit history,0.33
 0,APPROVE,0,22.0,17.6,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.22
 0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
 0,APPROVE,0,13.0,10.4,flags,,,0.13
-1,REJECT,1,57.0,48.0,flags,R001|R007|R003,Credit score below policy|Payment-to-Income (PTI) too high|Revolving utilization too high / over-limit,0.57
-0,APPROVE,0,22.0,17.6,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.22
-0,APPROVE,0,13.0,10.4,flags,,,0.13
+1,REJECT,1,57.0,48.0,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.57
+0,APPROVE,0,22.0,17.6,flags,R007|R003,Payment-to-Income (PTI) too high|Revolving utilization too high / over-limit,0.22
+0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
 0,APPROVE,0,13.0,10.4,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.13
-0,APPROVE,0,23.0,18.400000000000002,flags,,,0.23
-1,REJECT,1,33.0,26.400000000000002,flags,R007|R002,Payment-to-Income (PTI) too high|Limited/volatile credit history,0.33
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+1,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,13.0,10.4,flags,,,0.13
 1,APPROVE,0,23.0,18.400000000000002,flags,R001|R006|R002,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Limited/volatile credit history,0.23
 0,APPROVE,0,22.0,17.6,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.22
-0,APPROVE,0,22.0,17.6,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.22
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 1,APPROVE,0,22.0,17.6,flags,R001,Credit score below policy,0.22
-1,REJECT,1,33.0,26.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.33
-1,REJECT,1,30.0,24.0,flags,,,0.3
+1,REJECT,1,33.0,26.400000000000002,flags,R006,Debt-to-Income (DTI) too high / affordability,0.33
+1,REJECT,1,30.0,24.0,flags,R001,Credit score below policy,0.3
 0,APPROVE,0,18.0,14.4,flags,R001,Credit score below policy,0.18
 0,APPROVE,0,18.0,16.4,flags,R006|R007,Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.18
 0,APPROVE,0,22.0,17.6,flags,R001,Credit score below policy,0.22
 0,REJECT,1,30.0,26.0,flags,R001|R006|R007,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.3
 0,APPROVE,0,18.0,16.4,flags,R001|R006|R007,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.18
-0,APPROVE,0,7.0,5.6000000000000005,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.07
-0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
+0,APPROVE,0,7.0,5.6000000000000005,flags,R001|R006|R002,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Limited/volatile credit history,0.07
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,22.0,17.6,flags,R001,Credit score below policy,0.22
-0,APPROVE,0,13.0,10.4,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.13
-1,REJECT,1,33.0,28.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.33
-0,APPROVE,0,23.0,20.400000000000002,flags,R006,Debt-to-Income (DTI) too high / affordability,0.23
-1,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+1,REJECT,1,33.0,28.400000000000002,flags,R006,Debt-to-Income (DTI) too high / affordability,0.33
+0,APPROVE,0,23.0,20.400000000000002,flags,R001|R006|R002,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Limited/volatile credit history,0.23
+1,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
-0,APPROVE,0,22.0,17.6,flags,R001,Credit score below policy,0.22
-0,APPROVE,0,23.0,18.400000000000002,flags,R002,Limited/volatile credit history,0.23
+0,APPROVE,0,22.0,17.6,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.22
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 1,REJECT,1,62.0,49.6,flags,R001|R002,Credit score below policy|Limited/volatile credit history,0.62
 0,APPROVE,0,13.0,10.4,flags,,,0.13
 0,APPROVE,0,16.0,12.8,flags,,,0.16
 0,APPROVE,0,15.0,12.0,flags,R006,Debt-to-Income (DTI) too high / affordability,0.15
-0,REJECT,1,33.0,28.400000000000002,flags,R006,Debt-to-Income (DTI) too high / affordability,0.33
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,7.0,5.6000000000000005,flags,R001,Credit score below policy,0.07
 0,APPROVE,0,23.0,18.400000000000002,flags,,,0.23
-0,APPROVE,0,19.0,15.200000000000001,flags,R001,Credit score below policy,0.19
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 1,APPROVE,0,23.0,20.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.23
-0,REJECT,1,33.0,26.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.33
-1,REJECT,1,40.0,34.0,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.4
-0,APPROVE,0,0.0,0.0,flags,R007,Payment-to-Income (PTI) too high,0.0
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+1,REJECT,1,40.0,34.0,flags,R006,Debt-to-Income (DTI) too high / affordability,0.4
+0,APPROVE,0,0.0,0.0,flags,R003,Revolving utilization too high / over-limit,0.0
 0,REJECT,1,30.0,24.0,flags,,,0.3
 0,APPROVE,0,22.0,17.6,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.22
-0,APPROVE,0,13.0,12.4,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.13
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,23.0,18.400000000000002,flags,,,0.23
-1,REJECT,1,57.0,45.6,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.57
+1,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,16.0,12.8,flags,,,0.16
-1,REJECT,1,33.0,26.400000000000002,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.33
+1,REJECT,1,,,policy,P001,Policy/eligibility,
 1,APPROVE,0,18.0,14.4,flags,,,0.18
-0,APPROVE,0,13.0,10.4,flags,R001|R003,Credit score below policy|Revolving utilization too high / over-limit,0.13
-0,REJECT,1,30.0,24.0,flags,R001|R003,Credit score below policy|Revolving utilization too high / over-limit,0.3
+0,APPROVE,0,13.0,10.4,flags,R001|R006|R003,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Revolving utilization too high / over-limit,0.13
+0,REJECT,1,30.0,24.0,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.3
 1,REJECT,1,33.0,26.400000000000002,flags,R001|R007|R003,Credit score below policy|Payment-to-Income (PTI) too high|Revolving utilization too high / over-limit,0.33
 0,APPROVE,0,22.0,17.6,flags,R001,Credit score below policy,0.22
 0,APPROVE,0,18.0,14.4,flags,R007,Payment-to-Income (PTI) too high,0.18
 1,REJECT,1,62.0,51.6,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.62
 0,APPROVE,0,13.0,12.4,flags,R006,Debt-to-Income (DTI) too high / affordability,0.13
-0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
+0,APPROVE,0,13.0,10.4,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.13
 1,APPROVE,0,23.0,18.400000000000002,flags,R007,Payment-to-Income (PTI) too high,0.23
-1,REJECT,1,57.0,47.6,flags,R006|R007|R002,Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high|Limited/volatile credit history,0.57
-0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
-0,REJECT,1,33.0,26.400000000000002,flags,R001|R003,Credit score below policy|Revolving utilization too high / over-limit,0.33
+1,REJECT,1,,,policy,P001,Policy/eligibility,
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+0,REJECT,1,33.0,26.400000000000002,flags,R001,Credit score below policy,0.33
 0,APPROVE,0,22.0,17.6,flags,R001,Credit score below policy,0.22
 0,APPROVE,0,18.0,14.4,flags,,,0.18
 0,APPROVE,0,0.0,0.0,flags,,,0.0
 0,APPROVE,0,7.0,5.6000000000000005,flags,,,0.07
-0,APPROVE,0,22.0,17.6,flags,R001,Credit score below policy,0.22
-0,APPROVE,0,23.0,20.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.23
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,REJECT,1,33.0,26.400000000000002,flags,R006,Debt-to-Income (DTI) too high / affordability,0.33
-0,APPROVE,0,13.0,12.4,flags,R006,Debt-to-Income (DTI) too high / affordability,0.13
-0,REJECT,1,33.0,26.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.33
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+0,REJECT,1,33.0,26.400000000000002,flags,R006,Debt-to-Income (DTI) too high / affordability,0.33
 0,REJECT,1,30.0,26.0,flags,R006,Debt-to-Income (DTI) too high / affordability,0.3
-1,REJECT,1,62.0,49.6,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.62
-0,REJECT,1,30.0,24.0,flags,R006,Debt-to-Income (DTI) too high / affordability,0.3
+1,REJECT,1,62.0,49.6,flags,R001|R006|R003,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Revolving utilization too high / over-limit,0.62
+0,REJECT,1,30.0,24.0,flags,,,0.3
 0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
-0,APPROVE,0,13.0,10.4,flags,,,0.13
-0,APPROVE,0,23.0,18.400000000000002,flags,R002,Limited/volatile credit history,0.23
-1,REJECT,1,57.0,45.6,flags,R001|R006|R007,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.57
-0,REJECT,1,53.0,42.400000000000006,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.53
+0,APPROVE,0,13.0,10.4,flags,R007,Payment-to-Income (PTI) too high,0.13
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+1,REJECT,1,,,policy,P001,Policy/eligibility,
+0,REJECT,1,53.0,42.400000000000006,flags,R001,Credit score below policy,0.53
 0,APPROVE,0,23.0,20.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.23
-0,APPROVE,0,0.0,0.0,flags,R007,Payment-to-Income (PTI) too high,0.0
+0,APPROVE,0,0.0,0.0,flags,,,0.0
 0,APPROVE,0,18.0,16.8,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.18
 1,REJECT,1,33.0,26.400000000000002,flags,R006,Debt-to-Income (DTI) too high / affordability,0.33
-0,APPROVE,0,23.0,18.400000000000002,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.23
+0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
 0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
 0,APPROVE,0,23.0,18.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.23
-0,APPROVE,0,23.0,18.400000000000002,flags,,,0.23
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 1,REJECT,1,40.0,32.0,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.4
-1,REJECT,1,62.0,49.6,flags,R001|R002,Credit score below policy|Limited/volatile credit history,0.62
+1,REJECT,1,,,policy,P001,Policy/eligibility,
 0,REJECT,1,33.0,26.400000000000002,flags,R001,Credit score below policy,0.33
 0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
 0,APPROVE,0,13.0,10.4,flags,R007,Payment-to-Income (PTI) too high,0.13
@@ -957,45 +957,45 @@ true_label,decision,pred_label,risk_score,final_score,basis,codes,labels,pd_hat
 0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
 0,APPROVE,0,18.0,16.4,flags,R006,Debt-to-Income (DTI) too high / affordability,0.18
 1,REJECT,1,33.0,26.400000000000002,flags,R001,Credit score below policy,0.33
-0,APPROVE,0,22.0,17.6,flags,R001,Credit score below policy,0.22
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,23.0,20.400000000000002,flags,R001|R006|R007,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.23
 0,APPROVE,0,18.0,14.4,flags,,,0.18
-0,APPROVE,0,11.0,8.8,flags,R001,Credit score below policy,0.11
+0,APPROVE,0,11.0,8.8,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.11
 1,REJECT,1,40.0,34.0,flags,R006,Debt-to-Income (DTI) too high / affordability,0.4
 0,APPROVE,0,13.0,10.4,flags,,,0.13
-0,APPROVE,0,23.0,22.800000000000004,flags,R001|R006|R003,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Revolving utilization too high / over-limit,0.23
-0,APPROVE,0,23.0,20.800000000000004,flags,R003,Revolving utilization too high / over-limit,0.23
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 1,REJECT,1,30.0,24.0,flags,R006|R007|R002,Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high|Limited/volatile credit history,0.3
 0,APPROVE,0,22.0,17.6,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.22
 1,APPROVE,0,23.0,20.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.23
 1,APPROVE,0,11.0,8.8,flags,R001,Credit score below policy,0.11
-0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
-1,REJECT,1,62.0,51.6,flags,R001|R006|R007,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.62
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+1,REJECT,1,62.0,51.6,flags,R001|R006|R002,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Limited/volatile credit history,0.62
 0,APPROVE,0,13.0,10.4,flags,R001,Credit score below policy,0.13
 1,REJECT,1,62.0,49.6,flags,R001,Credit score below policy,0.62
 0,REJECT,1,33.0,26.400000000000002,flags,R001,Credit score below policy,0.33
-0,APPROVE,0,13.0,10.4,flags,R006,Debt-to-Income (DTI) too high / affordability,0.13
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,13.0,10.4,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.13
-1,REJECT,1,30.0,24.0,flags,R006,Debt-to-Income (DTI) too high / affordability,0.3
-0,APPROVE,0,23.0,18.400000000000002,flags,R001|R007,Credit score below policy|Payment-to-Income (PTI) too high,0.23
+1,REJECT,1,30.0,24.0,flags,,,0.3
+0,APPROVE,0,23.0,18.400000000000002,flags,R001|R003,Credit score below policy|Revolving utilization too high / over-limit,0.23
 0,APPROVE,0,22.0,17.6,flags,,,0.22
 0,APPROVE,0,22.0,19.6,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.22
-0,APPROVE,0,16.0,12.8,flags,R006,Debt-to-Income (DTI) too high / affordability,0.16
-0,APPROVE,0,23.0,18.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.23
+0,REJECT,1,,,policy,P001,Policy/eligibility,
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,22.0,19.6,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.22
 0,APPROVE,0,23.0,20.400000000000002,flags,R006,Debt-to-Income (DTI) too high / affordability,0.23
-0,REJECT,1,40.0,34.0,flags,R006|R003,Debt-to-Income (DTI) too high / affordability|Revolving utilization too high / over-limit,0.4
+0,REJECT,1,40.0,34.0,flags,R006,Debt-to-Income (DTI) too high / affordability,0.4
 0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
 1,REJECT,1,40.0,32.0,flags,R001,Credit score below policy,0.4
-0,APPROVE,0,13.0,10.4,flags,R006|R003,Debt-to-Income (DTI) too high / affordability|Revolving utilization too high / over-limit,0.13
+0,REJECT,1,,,policy,P001,Policy/eligibility,
 0,APPROVE,0,18.0,16.4,flags,R001|R006|R007,Credit score below policy|Debt-to-Income (DTI) too high / affordability|Payment-to-Income (PTI) too high,0.18
 0,APPROVE,0,13.0,10.4,flags,,,0.13
 1,REJECT,1,33.0,26.400000000000002,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.33
 0,REJECT,1,62.0,51.6,flags,R001|R006,Credit score below policy|Debt-to-Income (DTI) too high / affordability,0.62
 0,APPROVE,0,23.0,18.400000000000002,flags,R006,Debt-to-Income (DTI) too high / affordability,0.23
-0,APPROVE,0,15.0,12.0,flags,,,0.15
+0,APPROVE,0,15.0,12.0,flags,R006,Debt-to-Income (DTI) too high / affordability,0.15
 0,APPROVE,0,13.0,10.4,flags,,,0.13
 0,APPROVE,0,18.0,14.4,flags,R001|R003,Credit score below policy|Revolving utilization too high / over-limit,0.18
 0,APPROVE,0,22.0,17.6,flags,R001,Credit score below policy,0.22
-0,APPROVE,0,23.0,18.400000000000002,flags,,,0.23
+0,APPROVE,0,23.0,18.400000000000002,flags,R001,Credit score below policy,0.23
 0,APPROVE,0,23.0,20.400000000000002,flags,R006,Debt-to-Income (DTI) too high / affordability,0.23

@@ -19,7 +19,7 @@ SAMPLE_SIZE = 1000
 SEED        = 45
 
 # --- import your orchestrator ---
-from real_flow import run_pipeline
+from real_flow_test import run_pipeline
 
 random.seed(SEED); np.random.seed(SEED)
 
@@ -38,8 +38,6 @@ def _get(d, k, default=None):
 def row_to_profile(row: pd.Series) -> dict:
     """Adapt a flat row into the nested profile expected by your pipeline."""
     r = row.to_dict()
-
-    #identity = {"age": _get(r, "age", None)}
 
     cb = {
         "credit_score": _get(r, "credit_score"),
@@ -88,7 +86,7 @@ def row_to_profile(row: pd.Series) -> dict:
     }
 
     profile = {
-        #"identity": identity,
+        
         "credit_bureau_data": cb,
         "location": loc,
         "family": fam,

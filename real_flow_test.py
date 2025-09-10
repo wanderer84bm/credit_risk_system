@@ -14,6 +14,7 @@ import sys
 for m in ["flow","agent2","agent3","agent3part2","agent4_infer","agent5","agent6","cutoff"]:
     sys.modules.pop(m, None)
 
+##call_lyzr is not used for eval
 
 
 def _flatten_for_model(profile: Dict[str, Any]) -> Dict[str, Any]:
@@ -25,6 +26,48 @@ def _flatten_for_model(profile: Dict[str, Any]) -> Dict[str, Any]:
 import numpy as np
 from sklearn.metrics import confusion_matrix
 
+def tune_tau(y_true, pd_hat, objective="balanced_accuracy", cost_fp=1.0, cost_fn=5.0, grid=501):
+    """
+    y_true: 1=default, 0=non-default
+    pd_hat: model PDs in [0,1]  (if you have 0-100 scores, pass pd_hat = score/100)
+
+    objective: "balanced_accuracy" | "f1" | "cost"
+      - balanced_accuracy: maximize (TPR+TNR)/2  == maximize Youden's J
+      - f1: maximize F1 for class=1
+      - cost: minimize (cost_fp*FP + cost_fn*FN)
+    """
+    taus = np.linspace(0.0, 1.0, grid)
+    best = None
+
+    for t in taus:
+        y_pred = (pd_hat >= t).astype(int)  # 1=default if PD >= τ
+        tn, fp, fn, tp = confusion_matrix(y_true, y_pred, labels=[0,1]).ravel()
+
+        tpr = tp / (tp + fn) if (tp + fn) else 0.0   # recall on bads
+        tnr = tn / (tn + fp) if (tn + fp) else 0.0   # specificity on goods
+        prec = tp / (tp + fp) if (tp + fp) else 0.0
+
+        if objective == "balanced_accuracy":
+            score = 0.5 * (tpr + tnr)
+        elif objective == "f1":
+            f1 = (2*prec*tpr) / (prec + tpr) if (prec + tpr) else 0.0
+            score = f1
+        elif objective == "cost":
+            score = -(cost_fp * fp + cost_fn * fn)  # larger is better (less cost)
+        else:
+            raise ValueError("objective must be 'balanced_accuracy', 'f1', or 'cost'")
+
+        if (best is None) or (score > best["score"]):
+            best = {
+                "tau": float(t),
+                "score": float(score),
+                "TPR": float(tpr),
+                "TNR": float(tnr),
+                "Precision": float(prec),
+                "TN": int(tn), "FP": int(fp), "FN": int(fn), "TP": int(tp),
+            }
+
+    return best
 
 
 def run_pipeline(profile: Dict[str, Any],
@@ -35,8 +78,8 @@ def run_pipeline(profile: Dict[str, Any],
     p2 = agent2(profile)
 
     # 3) policy gate
-    #gate = agent3(p2)
-    gate = True
+    gate = agent3(p2)
+    
     if not gate:
         # Short-circuit: policy decline,
         det_flags = []  
@@ -53,22 +96,22 @@ def run_pipeline(profile: Dict[str, Any],
 
     # 3.5) deterministic flags (post-gate)
     det_flags = agent3part2(p2)["flags"]
-    total_flags = call_lyzr(det_flags, p2)
+    #total_flags = call_lyzr(det_flags, p2)
     #other_score = score_flags_v0(total_flags)["total_score"]
 
     
     other_score = float(score_flags_v0({"flags":det_flags}).get("total_score", 0.0))
     # 4) model
-    
+    #flat = _flatten_for_model({**p2, "derived_metrics": p2.get("derived_metrics", {})})
     out4 = agent4_predict_with_shap(p2, model_path, meta_path, top_k=3)
     ml_risk = float(out4.get("risk_score") or 0.0)
     ml_flags = extract_model_flags_from_shap(out4, top_k=3) if out4.get("top_factors") else []
     final_score = 0.8 * ml_risk + 0.2 * other_score
-    
+    #final_score = ml_risk 
     
 
     # 5) decision (blend)
-   
+    t = tune_tau
     decision = agent5(out4, other_score, p2, gate)
     
     # 6) codes

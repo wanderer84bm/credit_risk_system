@@ -51,11 +51,7 @@ def agent3(profile):
             max_employment_years = max(age - 13, 0)
             if employment_duration_years > max_employment_years:
                 return False
-    '''
-    # credit_velocity > 2 (avg >2 new accts/year)
-    if isinstance(credit_velocity, (int, float)) and credit_velocity > 2:
-        return False
-    '''
+    
 
     # credit_utilization outside [0, 1]
     if isinstance(credit_utilization, (int, float)):
