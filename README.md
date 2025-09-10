@@ -1,7 +1,7 @@
 
 # BNPL Credit Risk — agentic pipeline
 
-**Goal:** build an agentic BNPL risk pipeline and optimize **Balanced Accuracy** (BA) end-to-end on a 1k stratified sample. **Current BA > 0.779.**
+**Goal:** build an agentic BNPL risk pipeline and optimize **Balanced Accuracy** (BA) end-to-end on a 1k stratified sample. **Current BA = 0.729.**
 
 **Out of scope (for this repo/run):**
 - No per-row Lyzr/LLM calls (speed/$)
