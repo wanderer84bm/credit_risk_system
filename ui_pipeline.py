@@ -141,7 +141,7 @@ def _badge(decision: str) -> str:
 # ------------------ Defaults & Inputs ------------------
 DEFAULT_PROFILE = SAMPLE_PROFILE  # use your canonical as the starter text
 
-st.caption("Paste or edit a profile JSON (same layout as the canonical schema below), then click **Submit**.")
+st.caption("Paste or edit a profile JSON, then click **Submit**.")
 profile_text = st.text_area("Profile JSON", value=json.dumps(DEFAULT_PROFILE, indent=2), height=320)
 
 with st.expander("Sample Profile", expanded=False):
