@@ -87,7 +87,7 @@ python3 streamlit ui_pipeline.py
 ```
 
 ## For further details, check out the technical documentation
-[View Full Technical Documentation](/multi-agent-credit-risk-automation-system.pdf)
+[View Technical Documentation](/multi_agent_credit_risk_automation_system_technical_documentation.pdf)
 
 
 
