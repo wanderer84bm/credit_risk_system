@@ -78,17 +78,10 @@ def agent3part2(profile: Dict[str, Any], max_flags: int = 5) -> Dict[str, List[D
     purchase_amount = app.get("purchase_amount")
     term_months = app.get("term_months")
 
-    # ---------- derived metrics (local) ----------
+    # ---------- derived metrics  ----------
     monthly_income = _safe_div(annual_income, 12.0) if _is_num(annual_income) else None
     payment = _safe_div(purchase_amount, term_months) if _is_num(purchase_amount) and _is_num(term_months) else None
 
-    # PTI, HCR, CreditVelocity
-    '''
-    pti = _safe_div(payment, monthly_income)
-    dti = _safe_div(payment, monthly_income)
-    hcr = _safe_div(monthly_housing, monthly_income) if _is_num(monthly_housing) else None
-    credit_velocity = _safe_div(total_open, history_years) if _is_num(total_open) and _is_num(history_years) else None
-    '''
 
     # Utilization computed
     util_calc = None

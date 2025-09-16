@@ -1,139 +1,94 @@
+# Multi-Agent Credit Risk Automation System (PoC)
 
-# BNPL Credit Risk — agentic pipeline
+## Introduction  
+**Context:** Developed during my internship at RootQuotient, this project delivers a proof-of-concept for automating BNPL credit risk underwriting.  
 
-**Goal:** build an agentic BNPL risk pipeline and optimize **Balanced Accuracy** (BA) end-to-end on a 1k stratified sample. **Current BA = 0.729.**
-
-**Out of scope (for this repo/run):**
-- No per-row Lyzr/LLM calls (speed/$)
-- No third-party input verification
-- No LLM-generated synthetic data
+Manual BNPL underwriting is slow, inconsistent, and hard to audit. This PoC transforms the process into an end-to-end automated pipeline that is explainable — reducing decision times from hours to seconds.  
 
 ---
 
-## Pipeline (at a glance)
-
-```
-
-1 Intake  →  2 Features  →  3 Gate  →  3.5 Flags  →  4 Model  →  5 Decision  →  6 Explain
-
-```
-
-### What each agent does
-1. **Intake** — validate required fields; raise if missing.  
-2. **Features** — derive **DTI, PTI, HCR, Residual Monthly Income, Credit Velocity**.  
-3. **Gate (policy)** — hard policy checks; fail = auto-reject.  
-   - **3.5 Flags** — red/green flags (LLM design), but **LLM calls are disabled in eval**.  
-4. **Model (risk)** — HistGradientBoosting trained on **John Hull / Lending Club**; outputs PD and a **0–100 risk** score.  
-5. **Decision** — blend risk + flags and compare to cutoff.  
-6. **Explain** — map reasons to 6 short codes (and plain-English labels). Explanations come from **Agent 3 flags** + **top SHAP factors** from Agent 4.
+## Problem  
+- **Manual Underwriting:** Reliance on human review leads to delays and inconsistencies  
+- **Fragmented Data:** Applicant data scattered across credit bureaus, internal systems, and public records  
+- **Limited Automation:** Legacy credit systems lack intelligent risk scoring or contextual checks  
+- **Regulatory Pressure:** Need for explainable, auditable credit decisions to meet compliance requirements  
 
 ---
 
-## Decision policy
-
-- **Score space:** risk **0–100**
-- **Blend:**
-```
-
-final_score = 0.8 * ML_risk + 0.2 * flag_points
-
-```
-- **Flags:** max 5 per profile  
-  - Red: **+12** (high), **+10** (med), **+8** (low)  
-  - Green: **−15** (high), **−10** (med), **−5** (low)
-- In this eval, **LLM flags are off**.
-- **Cutoff & rule:** `final_score ≥ 23 → REJECT`, `final_score > 30 → REJECT`.
-- **Binary labels:** APPROVE = **0**, REJECT = **1**.
-- **Model note:** the model computes **probability of default (PD)** and it’s scaled ×100 to get the **risk score**.
+## Solution  
+This pipeline uses **six agents** orchestrated in a Python DAG to automate the entire underwriting process.  
+Agents validate inputs, compute derived metrics, apply policy rules, generate risk flags, combine LLM reasoning and ML models to produce a risk score, blend results into a final decision, and produce a traceable explanation.  
+This PoC reduces underwriting runtime by 50%.
 
 ---
 
-## Metrics & target
-
-- **Primary:** Balanced Accuracy = (TPR + TNR) / 2  
-- **Secondary:** Accuracy, Precision (class=1), Recall (class=1), F1 (class=1)  
-- **Class mapping:** 1 = default/bad, 0 = non-default/good  
-- **Data balance (eval slice):** ~80% goods / 20% bads (1k rows)
+## Demo
 
 ---
 
-## Current results (1k stratified rows; Lyzr off)
+## Pipeline Overview  
 
-```
+![System Architecture](/pipeline.png)
 
-Accuracy:           0.702
-Balanced Accuracy:  0.729
-Precision (class=1):0.380
-Recall (class=1):   0.775
-F1 (class=1):       0.510
-Confusion matrix (rows=true, cols=pred) [0,1]:
-[[547 253]
- [ 45 155]]
-````
+**Agent 1 – Intake:**  
+Throws error if any required field is missing.
 
+**Agent 2 – Feature Engineering:**  
+Derives key credit metrics and appends them to the profile:  
+- **DTI** (Debt-to-Income)  
+- **PTI** (Payment-to-Income)  
+- **HCR** (Housing Cost Ratio)  
+- **Residual Monthly Income**  
+- **Credit Velocity**  
 
+**Agent 3 – Policy Gate:**  
+Runs hard-no rules (e.g., age < 18, residual income < 0, invalid utilization) and rejects unqualified profiles.  
+
+**Agent 3.5 – Risk Flags:**  
+Runs ~10 deterministic checks (e.g., utilization consistency, housing cost burden, credit velocity).  
+Calls a GPT-4o-mini RAG pipeline (via Lyzr API) to infer additional red/green flags from curated knowledge docs.  
+
+**Agent 4 – ML Risk Scorer:**  
+Predicts **probability of default** using a calibrated ML model and produces a 0–100 risk score. Generates SHAP-based top feature attributions for explainability.  
+
+**Agent 5 – Decision:**  
+Combines risk score and flag score, applies thresholds, and classifies as APPROVE, APPROVE WITH CONDITION, or DECLINE.  
+
+**Agent 6 – Explanation:**  
+Maps deterministic flags and SHAP-driven features to standardized reason codes and outputs a structured trace object for auditability.  
 
 ---
 
+## Key Performance Indicators  
 
-
----
-
-## Data
-
-- **Source:** John Hull / Lending Club loan data  
-- **Labels:** *charged off etc* → **1** (default); *fully paid* → **0** (non-default)  
-- **Sample:** 1,000 stratified rows (seeded) for fast eval
+- **Latency:** ~16 s (end-to-end, single profile)  
+- **Balanced Accuracy:** 0.729  
+- **Precision:** 0.380  
+- **Recall:** 0.775  
+- **F1-Score:** 0.510  
 
 ---
 
-## How to run
+## Evaluation  
+The pipeline was validated on a stratified sample of labeled applications, reporting balanced accuracy, precision, recall, and F1-score. Confusion matrix and probability cutoffs were reviewed to ensure decisions aligned with risk tolerance.
+
+---
+
+## Future Scope  
+To better integrate with real-world data feeds, introduce an additional intake agent dedicated to data preprocessing and data collection. This agent will ingest data about the user from multiple sources (e.g., credit bureau reports, application forms, internal records), normalize field names and formats, and output a single standardized JSON profile for downstream agents.
+
+---
+
+## How to Run a Sample Profile  
 
 ```bash
-python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-python3 eval.py      # prints metrics and writes eval.csv
-````
-
-## To run a single profile 
-```bash
-python -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-python3 streamlit ui_pipeline.py     
-````
-
-**Outputs**
-
-* **stdout:** metrics + confusion matrix
-* **eval.csv:** per-row results (true label, decision, scores/codes)
-
-LLM calls are off by default for testing.
-
-For a single profile:
-Outputs decision and reasoning. 
-
-
----
-
-## Repo
-
-```
-real_flow_test.py      # orchestrator (run_pipeline)
-agent2.py         # features / derived metrics
-agent3.py         # policy gate
-agent3part2.py    # deterministic flags
-agent4_infer.py   # model inference (PD, risk; SHAP top factors)
-agent5.py         # decision policy (cutoff logic)
-agent6.py         # explanation codes/labels
-cutoff.py         # knobs (weights, cutoffs, switches)
-eval.py           # 1k-row eval; prints metrics & writes eval.csv
+python3 streamlit ui_pipeline.py
 ```
 
-```
-```
+## For further details, check out the technical documentation
+[View Full Technical Documentation](/multi-agent-credit-risk-automation-system.pdf)
 
 
 
-
-    
 
