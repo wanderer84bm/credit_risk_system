@@ -23,7 +23,7 @@ This PoC reduces underwriting runtime by 50%.
 ---
 
 ## Demo
-[![Demo](https://img.youtube.com/vi/7_Oqj4dwKro/0.jpg)](https://youtu.be/YOUR_VIDEO_ID)
+[![Demo](docs/demo.png)](https://www.youtube.com/watch?v=7_Oqj4dwKro)
 
 
 ---
