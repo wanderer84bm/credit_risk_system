@@ -23,12 +23,13 @@ This PoC reduces underwriting runtime by 50%.
 ---
 
 ## Demo
+(docs/demo_poc.mov)
 
 ---
 
 ## Pipeline Overview  
 
-![System Architecture](/pipeline.png)
+![System Architecture](docs/pipeline.png)
 
 **Agent 1 – Intake:**  
 Throws error if any required field is missing.
@@ -87,7 +88,7 @@ python3 streamlit ui_pipeline.py
 ```
 
 ## For further details, check out the technical documentation
-[View Technical Documentation](/multi_agent_credit_risk_automation_system_technical_documentation.pdf)
+[View Technical Documentation](docs/multi_agent_credit_risk_automation_system_technical_documentation.pdf)
 
 
 

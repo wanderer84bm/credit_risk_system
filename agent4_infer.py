@@ -176,7 +176,7 @@ def extract_model_flags_from_shap(agent4_out: dict, top_k: int = 3) -> list[str]
         if "credit_score" in n: return "LOW_SCORE"
         if "history" in n: return "SHORT_HISTORY"
         if "residualmonthlyincome" in n or "residual_monthly_income" in n: return "LOW_RMI"
-        return f"MODEL_{name.upper()}"
+        return f"{name.upper()}"
 
     factors = (agent4_out or {}).get("top_factors") or []
     # keep only adverse (“+”) and sort by magnitude

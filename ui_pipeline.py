@@ -12,8 +12,8 @@ from dotenv import load_dotenv
 from real_flow import run_pipeline
 
 load_dotenv()
-st.set_page_config(page_title="Credit Decisioning", layout="wide")
-st.title("Credit Decisioning")
+st.set_page_config(page_title="Credit Decisioning System", layout="wide")
+st.title("Credit Decisioning System")
 
 
 SAMPLE_PROFILE = {
@@ -139,8 +139,7 @@ def _badge(decision: str) -> str:
     return f"ℹ️ {decision or '—'}"
 
 # ------------------ Defaults & Inputs ------------------
-DEFAULT_PROFILE = SAMPLE_PROFILE  # use your canonical as the starter text
-
+DEFAULT_PROFILE = SAMPLE_PROFILE 
 st.caption("Paste or edit a profile JSON, then click **Submit**.")
 profile_text = st.text_area("Profile JSON", value=json.dumps(DEFAULT_PROFILE, indent=2), height=320)
 
@@ -198,16 +197,12 @@ if submitted:
 
     # Render result
     decision = result.get("decision")
-    basis = result.get("basis")
-    risk = result.get("risk_score")
     final = result.get("final_score")
 
     st.subheader("Decision")
     st.markdown(_badge(decision))
     c1, c2, c3, c4 = st.columns(4)
-    c1.metric("Basis", basis or "—")
-    c2.metric("Risk Score (ML)", "—" if risk is None else f"{risk:.0f}")
-    c3.metric("Final Score", "—" if final is None else f"{final:.0f}")
+    c3.metric("Final Score", "—" if final is None else f"{final:.0f}/100")
     c4.metric("Codes", str(len(result.get("codes", []))))
 
     # Approve-with-condition: only if pipeline says so; fixed 25%
@@ -236,21 +231,43 @@ if submitted:
         else:
             st.write("No mapped codes returned.")
 
-    # Internals from pipeline trace (optional)
+    # Internals from pipeline trace 
     trace = result.get("trace", {}) or {}
-    with st.expander("Trace — Deterministic Flags"):
+
+
+
+    with st.expander("Trace"):
         det_flags = trace.get("det_flags") or []
+        ml_top = trace.get("agent4_top_factors") or []
+        ml_flags = trace.get("ml_flags") or []
+
         if det_flags:
+            st.markdown("**Agent 3.5 Deterministic Flags:**")
             import pandas as pd
             df = pd.DataFrame(det_flags)
             st.dataframe(df, use_container_width=True)
         else:
-            st.caption("No deterministic flags.")
-    with st.expander("Trace — ML Top Factors"):
-        st.json(trace.get("agent4_top_factors") or [])
-    with st.expander("Trace — ML Flags"):
-        st.json(trace.get("ml_flags") or [])
+            st.caption("No flags from Agent 3.5")
 
-    st.success("Done.")
+        if ml_top:
+            st.markdown("**Agent 4 Top Factors:**")
+            for f in ml_top:
+                feature = (f.get("feature", "unknown") or "").replace("_", " ").title()
+                direction = "↑ increases risk" if str(f.get("direction", "+")) == "+" else "↓ reduces risk"
+                st.markdown(f"- **{feature}** — {direction}")
+        else:
+            st.caption("No factors from Agent 4.")
+
+        if ml_flags:
+            st.markdown("**Agent 4 Flags:**")
+            for flag in ml_flags:
+                clean_flag = flag.replace("_", " ").title()
+                st.markdown(f"- {clean_flag}")
+        else:
+            st.caption("No flags from Agent 4.")
+
+
+
+    
 
 
